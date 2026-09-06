@@ -5,8 +5,8 @@
 - [zmcontrol](#zmcontrol)
 - [zmcontrol --help / zmcontrol -h](#zmcontrol---help--zmcontrol--h)
 - [zmcontrol -v](#zmcontrol--v)
-- []()
-- []()
+- [zmcontrol status](#zmcontrol-status)
+- [zmcontrol restart](#zmcontrol-restart)
 
 ---
 
@@ -59,6 +59,19 @@ Ex:
 ```bash
 su zimbra
 zmcontrol status
+```
+
+---
+
+#### zmcontrol restart
+
+Reinicia completamente o Zimbra. 
+Na prática, ele faz o trabalho de dois comandos de uma vez só: primeiro ele para todos os serviços do Zimbra que estão rodando e, em seguida, inicia cada um deles novamente.
+
+Ex:
+```bash
+su zimbra
+zmcontrol restart
 ```
 
 ---
