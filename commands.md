@@ -11,7 +11,7 @@
 - [zmcontrol stop](#zmcontrol-stop)
 - [ZMPROV](#zmprov)
 - [zmprov gad / zmprov getAllDomains](#zmprov-gad--zmprov-getalldomains)
-- [](#)
+- [zmprov cd / zmprov createDomain](#zmprov-cd--zmprov-createdomain)
 
 
 ---
@@ -121,6 +121,19 @@ Ex:
 zmprov gad
 ou 
 zmprov getAllDomains
+```
+
+---
+
+#### zmprov cd / zmprov createDomain
+
+**cd** -> create domain.
+
+Ex:
+```bash
+zmprov cd dominio.com.br
+ou 
+zmprov createDomain dominio.com.br
 ```
 
 ---
