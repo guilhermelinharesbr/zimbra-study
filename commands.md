@@ -8,7 +8,7 @@
 - [zmcontrol status](#zmcontrol-status)
 - [zmcontrol restart](#zmcontrol-restart)
 - [zmcontrol start](#zmcontrol-start)
-- [zmcontrol stop](#)
+- [zmcontrol stop](#zmcontrol-stop)
 
 
 ---
@@ -87,6 +87,18 @@ Ex:
 ```bash
 su zimbra
 zmcontrol start
+```
+
+---
+
+#### zmcontrol stop
+
+Para todos os serviços do Zimbra.
+
+Ex:
+```bash
+su zimbra
+zmcontrol stop
 ```
 
 ---
