@@ -1,19 +1,22 @@
-# Zimbra
+# Zimbra commands
 
 
 ### Sumário
-- [zmcontrol](#zmcontrol)
+- [ZMCONTROL](#zmcontrol)
 - [zmcontrol --help / zmcontrol -h](#zmcontrol---help--zmcontrol--h)
 - [zmcontrol -v](#zmcontrol--v)
 - [zmcontrol status](#zmcontrol-status)
 - [zmcontrol restart](#zmcontrol-restart)
 - [zmcontrol start](#zmcontrol-start)
 - [zmcontrol stop](#zmcontrol-stop)
+- [ZMPROV](#zmprov)
+- [](#)
+- [](#)
 
 
 ---
 
-#### zmcontrol
+#### ZMCONTROL
 
 Gerencia os serviços (ligar, desligar, status).
 
@@ -100,5 +103,11 @@ Ex:
 su zimbra
 zmcontrol stop
 ```
+
+---
+
+#### ZMPROV
+
+O zmprov (Zimbra **Prov**isioning CLI) é a ferramenta de linha de comando mais poderosa e utilizada no Zimbra. Gerencia as contas, senhas, domínios, listas de discussão e configurações internas.
 
 ---
