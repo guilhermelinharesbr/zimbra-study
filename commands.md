@@ -10,7 +10,7 @@
 - [zmcontrol start](#zmcontrol-start)
 - [zmcontrol stop](#zmcontrol-stop)
 - [ZMPROV](#zmprov)
-- [](#)
+- [zmprov gad / zmprov getAllDomains](#zmprov-gad--zmprov-getalldomains)
 - [](#)
 
 
@@ -109,5 +109,18 @@ zmcontrol stop
 #### ZMPROV
 
 O zmprov (Zimbra **Prov**isioning CLI) é a ferramenta de linha de comando mais poderosa e utilizada no Zimbra. Gerencia as contas, senhas, domínios, listas de discussão e configurações internas.
+
+---
+
+#### zmprov gad / zmprov getAllDomains
+
+**gad** -> get all domains.
+
+Ex:
+```bash
+zmprov gad
+ou 
+zmprov getAllDomains
+```
 
 ---
