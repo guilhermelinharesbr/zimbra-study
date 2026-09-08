@@ -203,6 +203,11 @@ zmprov ca guilherme.linhares@dominio.com.br @123456 givenName "Guilherme" sn "Li
 
 ---
 
+#### zmprov da / zmprov deleteAccount
 
+Deleta uma conta de email:
+```bash
+zmprov da guilherme.linhares@dominio.com.br
+```
 
 ---
