@@ -12,6 +12,13 @@
 - [ZMPROV](#zmprov)
 - [zmprov gad / zmprov getAllDomains](#zmprov-gad--zmprov-getalldomains)
 - [zmprov cd / zmprov createDomain](#zmprov-cd--zmprov-createdomain)
+- [zmprov dd / zmprov deleteDomain](#zmprov-dd--zmprov-deletedomain)
+- []()
+- []()
+- []()
+- []()
+- []()
+
 
 
 ---
@@ -134,6 +141,19 @@ Ex:
 zmprov cd dominio.com.br
 ou 
 zmprov createDomain dominio.com.br
+```
+
+---
+
+#### zmprov dd / zmprov deleteDomain
+
+**dd** -> delete domain.
+
+Ex:
+```bash
+zmprov dd dominio.com.br
+ou 
+zmprov deleteDomain dominio.com.br
 ```
 
 ---
