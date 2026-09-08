@@ -13,8 +13,9 @@
 - [zmprov gad / zmprov getAllDomains](#zmprov-gad--zmprov-getalldomains)
 - [zmprov cd / zmprov createDomain](#zmprov-cd--zmprov-createdomain)
 - [zmprov dd / zmprov deleteDomain](#zmprov-dd--zmprov-deletedomain)
-- []()
-- []()
+- [zmprov gaa / zmprov getAllAccounts](#zmprov-gaa--zmprov-getallaccounts)
+- [zmprov ca / zmprov createAccount](#zmprov-ca--zmprov-createaccount)
+- [zmprov da / zmprov deleteAccount](#zmprov-da--zmprov-deleteaccount)
 - []()
 - []()
 - []()
@@ -183,5 +184,25 @@ Exibe o total de contas deste domínio:
 ```bash
 zmprov -l gaa dominio.com.br | wc -l
 ```
+
+---
+
+#### zmprov ca / zmprov createAccount
+
+**ca** -> create account.
+
+Cria a conta de email para o usuário Guilherme e já define a senha dele:
+```bash
+zmprov ca guilherme.linhares@dominio.com.br SuaSenhaSeguraAqui
+```
+
+Cria a conta e já define nome, sobrenome e nome de exibição:
+```bash
+zmprov ca guilherme.linhares@dominio.com.br @123456 givenName "Guilherme" sn "Linhares" displayName "Guilherme Linhares"
+```
+
+---
+
+
 
 ---
