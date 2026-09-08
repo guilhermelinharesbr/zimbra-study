@@ -16,7 +16,7 @@
 - [zmprov gaa / zmprov getAllAccounts](#zmprov-gaa--zmprov-getallaccounts)
 - [zmprov ca / zmprov createAccount](#zmprov-ca--zmprov-createaccount)
 - [zmprov da / zmprov deleteAccount](#zmprov-da--zmprov-deleteaccount)
-- []()
+- [zmprov ma / zmprov modifyAccount](#zmprov-ma--zmprov-modifyaccount)
 - []()
 - []()
 
@@ -208,6 +208,20 @@ zmprov ca guilherme.linhares@dominio.com.br @123456 givenName "Guilherme" sn "Li
 Deleta uma conta de email:
 ```bash
 zmprov da guilherme.linhares@dominio.com.br
+```
+
+---
+
+#### zmprov ma / zmprov modifyAccount
+
+Bloqueia uma conta:
+```bash
+zmprov ma guilherme.linhares@dominio.com.br zimbraAccountStatus locked
+```
+
+Desbloqueia uma conta:
+```bash
+zmprov ma guilherme.linhares@dominio.com.br zimbraAccountStatus active
 ```
 
 ---
