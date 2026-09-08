@@ -157,3 +157,31 @@ zmprov deleteDomain dominio.com.br
 ```
 
 ---
+
+#### zmprov gaa / zmprov getAllAccounts
+
+**gaa** -> get all account.
+
+Imprime na tela todas as contas independente do domínio:
+
+```bash
+zmprov -l gaa
+ou
+zmprov -l getAllAccounts
+```
+
+Imprime na tela todas as contas do domínio dominio.com.br:
+
+```bash
+zmprov -l gaa dominio.com.br
+```
+
+Obs: A opção **-l**: Abreviação de _LDAP_. Este parâmetro é um truque de desempenho crucial. Ele diz ao Zimbra para ler os dados diretamente do serviço de diretório local (LDAP) em vez de fazer uma requisição SOAP completa pelo servidor web. Isso torna a resposta do comando muito mais rápida, especialmente se o servidor tiver milhares de contas.
+
+Exibe o total de contas deste domínio:
+
+```bash
+zmprov -l gaa dominio.com.br | wc -l
+```
+
+---
