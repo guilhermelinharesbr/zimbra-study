@@ -5,12 +5,14 @@
 
 - [ZMCONTROL](#zmcontrol)
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
-- [zmcontrol --help / zmcontrol -h](#zmcontrol---help--zmcontrol--h)
+- [zmcontrol -h / zmcontrol --help](#zmcontrol--h--zmcontrol---help)
 - [zmcontrol -v](#zmcontrol--v)
 - [zmcontrol status](#zmcontrol-status)
 - [zmcontrol restart](#zmcontrol-restart)
 - [zmcontrol start](#zmcontrol-start)
+- [zmcontrol startup](#)
 - [zmcontrol stop](#zmcontrol-stop)
+- [zmcontrol shutdown](#zmcontrol-shutdown)
 
 ---
 
@@ -26,14 +28,16 @@ Gerencia os serviços (ligar, desligar, status).
 
 ---
 
-#### zmcontrol --help / zmcontrol -h
+#### zmcontrol -h / zmcontrol --help
 
-Mostra as opções de ajuda.
+Mostra as opções de ajuda. O `zmcontrol --help` mostra um pouco mais de ìnformações que o `zmcontrol -h`.
 
 Ex:
 ```bash
 su zimbra
 zmcontrol --help
+ou 
+zmcontrol -h
 ```
 
 ---
@@ -98,6 +102,18 @@ zmcontrol start
 
 ---
 
+#### zmcontrol startup
+
+Inicia todos os serviços do Zimbra que estão parados.
+
+Ex:
+```bash
+su zimbra
+zmcontrol startup
+```
+
+---
+
 #### zmcontrol stop
 
 Para todos os serviços do Zimbra.
@@ -106,6 +122,18 @@ Ex:
 ```bash
 su zimbra
 zmcontrol stop
+```
+
+---
+
+#### zmcontrol shutdown
+
+Para todos os serviços do Zimbra.
+
+Ex:
+```bash
+su zimbra
+zmcontrol shutdown
 ```
 
 ---
