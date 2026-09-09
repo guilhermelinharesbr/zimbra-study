@@ -17,7 +17,7 @@
 - [zmprov ca / zmprov createAccount](#zmprov-ca--zmprov-createaccount)
 - [zmprov da / zmprov deleteAccount](#zmprov-da--zmprov-deleteaccount)
 - [zmprov ma / zmprov modifyAccount](#zmprov-ma--zmprov-modifyaccount)
-- []()
+- [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
 - []()
 
 
@@ -222,6 +222,19 @@ zmprov ma guilherme.linhares@dominio.com.br zimbraAccountStatus locked
 Desbloqueia uma conta:
 ```bash
 zmprov ma guilherme.linhares@dominio.com.br zimbraAccountStatus active
+```
+
+---
+
+#### zmprov gsi / zmprov getShareInfo
+
+Esse comando retorna informações sobre compartilhamentos publicados, quando o proprietário é especificado, o servidor percorre a mailbox dele pra descobrir todos os compartilhamentos aplicáveis. A saída inclui todos os campos importantes: id do dono, e-mail do dono, id da pasta, caminho completo da pasta, tipo de visualização, direitos concedidos, tipo de concessão (grantee), id e nome do concessionário.
+
+Desbloqueia uma conta:
+```bash
+zmprov gsi financeiro@dominio.com.br
+ou
+zmprov getShareInfo financeiro@dominio.com.br
 ```
 
 ---
