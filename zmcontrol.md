@@ -10,7 +10,7 @@
 - [zmcontrol status](#zmcontrol-status)
 - [zmcontrol restart](#zmcontrol-restart)
 - [zmcontrol start](#zmcontrol-start)
-- [zmcontrol startup](#)
+- [zmcontrol startup](#zmcontrol-startup)
 - [zmcontrol stop](#zmcontrol-stop)
 - [zmcontrol shutdown](#zmcontrol-shutdown)
 
