@@ -7,6 +7,7 @@
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
 - [Opções Gerais](#opções-gerais)
 - [zmprov --help / zmprov -h](#zmprov---help--zmprov--h)
+- [Comandos de provisionamento de Domínio](#comandos-de-provisionamento-de-domínio)
 - [zmprov gad / zmprov getAllDomains](#zmprov-gad--zmprov-getalldomains)
 - [zmprov cd / zmprov createDomain](#zmprov-cd--zmprov-createdomain)
 - [zmprov dd / zmprov deleteDomain](#zmprov-dd--zmprov-deletedomain)
@@ -51,6 +52,12 @@ zmprov --help
 ou 
 zmprov -h
 ```
+
+---
+
+#### Comandos de provisionamento de Domínio
+
+Comandos que são usados para criação, configuração, etc dos domínios no Zimbra. 
 
 ---
 
