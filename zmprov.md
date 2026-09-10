@@ -8,6 +8,7 @@
 - [Opções Gerais](#opções-gerais)
 - [zmprov --help / zmprov -h](#zmprov---help--zmprov--h)
 - [Comandos de provisionamento de Domínio](#comandos-de-provisionamento-de-domínio)
+- [zmprov getDomainInfo / zmprov gdi](#zmprov-getdomaininfo--zmprov-gdi)
 - [zmprov gad / zmprov getAllDomains](#zmprov-gad--zmprov-getalldomains)
 - [zmprov cd / zmprov createDomain](#zmprov-cd--zmprov-createdomain)
 - [zmprov dd / zmprov deleteDomain](#zmprov-dd--zmprov-deletedomain)
@@ -24,19 +25,19 @@
 
 ---
 
-#### ZMPROV
+### ZMPROV
 
 O zmprov (Zimbra **Prov**isioning CLI) é a ferramenta de linha de comando mais poderosa e utilizada no Zimbra. Gerencia as contas, senhas, domínios, listas de discussão e configurações internas.
 
 ---
 
-#### Fonte de Pesquisa
+### Fonte de Pesquisa
 
 [Zmprov Wiki](https://wiki.zimbra.com/wiki/Zmprov "Comando zmprov na Wiki do Zimbra")
 
 ---
 
-#### Opções Gerais
+### Opções Gerais
 
 As opções gerais do comando zmprov serão mostradas mais abaixo neste artigo.
 
@@ -55,9 +56,40 @@ zmprov -h
 
 ---
 
-#### Comandos de provisionamento de Domínio
+### Comandos de provisionamento de Domínio
 
 Comandos que são usados para criação, configuração, etc dos domínios no Zimbra. 
+
+---
+
+#### zmprov getDomain
+
+Para descobrir o ID do domínio:
+```bash
+zmprov gd empresa.com.br zimbraId
+```
+
+---
+
+#### zmprov getDomainInfo / zmprov gdi
+
+Mostra informações de detrminado domínio. Ele precisa que seja digo o tipo de valor Sendo aceito: _name_, _id_, _virtualHostname_ 
+
+Exibe informações gerais do domínio com base no NAME:
+```bash
+zmprov getDomainInfo name empresa.com.br
+ou 
+zmprov gdi name empresa.com.br
+```
+
+
+
+Exibe informações gerais do domínio com base no ID:
+```bash
+zmprov getDomainInfo id a56da796-0edd-4023-8329-edb344158567
+ou
+zmprov gdi id a56da796-0edd-4023-8329-edb344158567
+```
 
 ---
 
