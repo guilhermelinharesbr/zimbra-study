@@ -6,6 +6,7 @@
 - [ZMPROV](#zmprov)
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
 - [Opções Gerais](#opções-gerais)
+- [zmprov --help / zmprov -h](#zmprov---help--zmprov--h)
 - [zmprov gad / zmprov getAllDomains](#zmprov-gad--zmprov-getalldomains)
 - [zmprov cd / zmprov createDomain](#zmprov-cd--zmprov-createdomain)
 - [zmprov dd / zmprov deleteDomain](#zmprov-dd--zmprov-deletedomain)
@@ -37,6 +38,19 @@ O zmprov (Zimbra **Prov**isioning CLI) é a ferramenta de linha de comando mais 
 #### Opções Gerais
 
 As opções gerais do comando zmprov serão mostradas mais abaixo neste artigo.
+
+---
+
+#### zmprov --help / zmprov -h
+
+Mostra o meu de ajuda do comando zmprov.
+
+Ex:
+```bash
+zmprov --help
+ou 
+zmprov -h
+```
 
 ---
 
