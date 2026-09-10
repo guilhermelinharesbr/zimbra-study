@@ -6,6 +6,7 @@
 - [ZMCONTROL](#zmcontrol)
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
 - [zmcontrol -h / zmcontrol --help](#zmcontrol--h--zmcontrol---help)
+- [zmcontrol -H](#zmcontrol--h)
 - [zmcontrol -v](#zmcontrol--v)
 - [zmcontrol status](#zmcontrol-status)
 - [zmcontrol restart](#zmcontrol-restart)
@@ -38,6 +39,19 @@ su zimbra
 zmcontrol --help
 ou 
 zmcontrol -h
+```
+
+---
+
+#### zmcontrol -H
+
+Usado para deixar mais visível em que servidor o adminstrador está trabalhando. A opção `-H` é para indicar o Host name(default is localhost). 
+
+Ex:
+```bash
+zmcontrol -H mail.empresa.com.br status
+#Este comando acima seria o mesmo que rodar o comando abaixo
+zmcontrol status
 ```
 
 ---
