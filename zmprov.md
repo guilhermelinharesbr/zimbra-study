@@ -7,7 +7,7 @@
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
 - [Opções Gerais](#opções-gerais)
 - [zmprov --help / zmprov -h](#zmprov---help--zmprov--h)
-- [Comandos de provisionamento de Domínio](#comandos-de-provisionamento-de-domínio)
+- [Comandos de provisionamento de DOMÍNIO](#comandos-de-provisionamento-de-domínio)
 - [zmprov countAccount / zmprov cta](#zmprov-countaccount--zmprov-cta)
 - [zmprov createDomain / zmprov cd](#zmprov-createdomain--zmprov-cd)
 - [zmprov deleteDomain / zmprov dd](#zmprov-deletedomain--zmprov-dd)
@@ -15,6 +15,7 @@
 - [zmprov getDomainInfo / zmprov gdi](#zmprov-getdomaininfo--zmprov-gdi)
 - [zmprov getAllDomains / zmprov gad](#zmprov-getalldomains--zmprov-gad)
 - [zmprov modifyDomain / zmprov md](#zmprov-modifydomain--zmprov-md)
+- [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
 - [zmprov gaa / zmprov getAllAccounts](#zmprov-gaa--zmprov-getallaccounts)
 - [zmprov ca / zmprov createAccount](#zmprov-ca--zmprov-createaccount)
 - [zmprov da / zmprov deleteAccount](#zmprov-da--zmprov-deleteaccount)
@@ -59,7 +60,7 @@ zmprov -h
 
 ---
 
-### Comandos de provisionamento de Domínio
+### Comandos de provisionamento de DOMÍNIO
 
 Comandos que são usados para criação, configuração, etc dos domínios no Zimbra. 
 
@@ -180,6 +181,12 @@ zmprov modifyDomain empresa.com.br description "Empresa XYZ"
 ou
 zmprov md empresa.com.br description "Empresa XYZ"
 ```
+
+---
+
+### Comandos de provisionamento de CONTAS
+
+Comandos que são usados para criação, configuração, etc das contas no Zimbra. 
 
 ---
 
