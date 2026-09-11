@@ -11,6 +11,7 @@
 - [zmprov countAccount / zmprov cta](#zmprov-countaccount--zmprov-cta)
 - [zmprov createDomain / zmprov cd](#zmprov-createdomain--zmprov-cd)
 - [zmprov deleteDomain / zmprov dd](#zmprov-deletedomain--zmprov-dd)
+- [zmprov getDomain / zmprov gd](#zmprov-getdomain--zmprov-gd)
 - [zmprov getDomainInfo / zmprov gdi](#zmprov-getdomaininfo--zmprov-gdi)
 - [zmprov gad / zmprov getAllDomains](#zmprov-gad--zmprov-getalldomains)
 - [zmprov gaa / zmprov getAllAccounts](#zmprov-gaa--zmprov-getallaccounts)
@@ -63,15 +64,6 @@ Comandos que são usados para criação, configuração, etc dos domínios no Zi
 
 ---
 
-#### zmprov getDomain
-
-Para descobrir o ID do domínio:
-```bash
-zmprov gd empresa.com.br zimbraId
-```
-
----
-
 #### zmprov countAccount / zmprov cta
 
 Serve pra contar quantas contas existem em um domínio, agrupadas por Classe de Serviço (COS), útil principalmente pra controle de licenciamento e planejamento de capacidade.
@@ -100,13 +92,42 @@ zmprov cd dominio.com.br
 
 #### zmprov deleteDomain / zmprov dd
 
-**dd** -> delete domain.
+**dd** -> deleteDomain.
 
 Ex:
 ```bash
 zmprov deleteDomain dominio.com.br
 ou
 zmprov dd dominio.com.br
+```
+
+---
+
+#### zmprov getDomain / zmprov gd
+
+**gd** -> getDomain.
+
+Mostra inúmeras informações sobre um domínio.
+
+Ex:
+```bash
+zmprov getDomain empresa.com.br
+ou
+zmprov gd empresa.com.br
+```
+
+Para descobrir o ID do domínio:
+```bash
+zmprov getDomain empresa.com.br zimbraId
+ou
+zmprov gd empresa.com.br zimbraId
+```
+
+Para descobrir o domínio de um ID:
+```bash
+zmprov getDomain 5679d38a-2bc5-4f76-a4e0-ea218d879567 zimbraId
+ou
+zmprov gd 5679d38a-2bc5-4f76-a4e0-ea218d879567 zimbraId
 ```
 
 ---
