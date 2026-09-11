@@ -14,6 +14,7 @@
 - [zmprov getDomain / zmprov gd](#zmprov-getdomain--zmprov-gd)
 - [zmprov getDomainInfo / zmprov gdi](#zmprov-getdomaininfo--zmprov-gdi)
 - [zmprov getAllDomains / zmprov gad](#zmprov-getalldomains--zmprov-gad)
+- [zmprov modifyDomain / zmprov md](#zmprov-modifydomain--zmprov-md)
 - [zmprov gaa / zmprov getAllAccounts](#zmprov-gaa--zmprov-getallaccounts)
 - [zmprov ca / zmprov createAccount](#zmprov-ca--zmprov-createaccount)
 - [zmprov da / zmprov deleteAccount](#zmprov-da--zmprov-deleteaccount)
@@ -163,6 +164,21 @@ Ex:
 zmprov getAllDomains
 ou
 zmprov gad
+```
+
+---
+
+### zmprov modifyDomain / zmprov md
+
+**md** -> modifyDomain
+
+Serve pra alterar atributos de configuração de um domínio já existente.
+
+Ex. Modifica a descrição do domínio:
+```bash
+zmprov modifyDomain empresa.com.br description "Empresa XYZ"
+ou
+zmprov md empresa.com.br description "Empresa XYZ"
 ```
 
 ---
