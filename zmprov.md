@@ -13,7 +13,7 @@
 - [zmprov deleteDomain / zmprov dd](#zmprov-deletedomain--zmprov-dd)
 - [zmprov getDomain / zmprov gd](#zmprov-getdomain--zmprov-gd)
 - [zmprov getDomainInfo / zmprov gdi](#zmprov-getdomaininfo--zmprov-gdi)
-- [zmprov gad / zmprov getAllDomains](#zmprov-gad--zmprov-getalldomains)
+- [zmprov getAllDomains / zmprov gad](#zmprov-getalldomains--zmprov-gad)
 - [zmprov gaa / zmprov getAllAccounts](#zmprov-gaa--zmprov-getallaccounts)
 - [zmprov ca / zmprov createAccount](#zmprov-ca--zmprov-createaccount)
 - [zmprov da / zmprov deleteAccount](#zmprov-da--zmprov-deleteaccount)
@@ -154,22 +154,22 @@ zmprov gdi id a56da796-0edd-4023-8329-edb344158567
 
 ---
 
-#### zmprov gad / zmprov getAllDomains
+#### zmprov getAllDomains / zmprov gad
 
-**gad** -> get all domains.
+**gad** -> getAllDomains.
 
 Ex:
 ```bash
-zmprov gad
-ou 
 zmprov getAllDomains
+ou
+zmprov gad
 ```
 
 ---
 
-#### zmprov gaa / zmprov getAllAccounts
+#### zmprov getAllAccounts / zmprov gaa
 
-**gaa** -> get all account.
+**gaa** -> getAllAccounts.
 
 Imprime na tela todas as contas independente do domínio:
 
