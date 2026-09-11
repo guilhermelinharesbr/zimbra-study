@@ -3,16 +3,16 @@
 
 ### Sumário
 
-- [ZMPROV](#zmprov)
+- [Definição](#definição)
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
 - [Opções Gerais](#opções-gerais)
 - [zmprov --help / zmprov -h](#zmprov---help--zmprov--h)
 - [Comandos de provisionamento de Domínio](#comandos-de-provisionamento-de-domínio)
 - [zmprov countAccount / zmprov cta](#zmprov-countaccount--zmprov-cta)
+- [zmprov createDomain / zmprov cd](#zmprov-createdomain--zmprov-cd)
+- [zmprov deleteDomain / zmprov dd](#zmprov-deletedomain--zmprov-dd)
 - [zmprov getDomainInfo / zmprov gdi](#zmprov-getdomaininfo--zmprov-gdi)
 - [zmprov gad / zmprov getAllDomains](#zmprov-gad--zmprov-getalldomains)
-- [zmprov cd / zmprov createDomain](#zmprov-cd--zmprov-createdomain)
-- [zmprov dd / zmprov deleteDomain](#zmprov-dd--zmprov-deletedomain)
 - [zmprov gaa / zmprov getAllAccounts](#zmprov-gaa--zmprov-getallaccounts)
 - [zmprov ca / zmprov createAccount](#zmprov-ca--zmprov-createaccount)
 - [zmprov da / zmprov deleteAccount](#zmprov-da--zmprov-deleteaccount)
@@ -26,7 +26,7 @@
 
 ---
 
-### ZMPROV
+### Definição
 
 O zmprov (Zimbra **Prov**isioning CLI) é a ferramenta de linha de comando mais poderosa e utilizada no Zimbra. Gerencia as contas, senhas, domínios, listas de discussão e configurações internas.
 
@@ -85,6 +85,32 @@ zmprov cta dominio.com.br
 
 ---
 
+#### zmprov createDomain / zmprov cd
+
+**cd** -> create domain.
+
+Ex:
+```bash
+zmprov createDomain dominio.com.br
+ou
+zmprov cd dominio.com.br
+```
+
+---
+
+#### zmprov deleteDomain / zmprov dd
+
+**dd** -> delete domain.
+
+Ex:
+```bash
+zmprov deleteDomain dominio.com.br
+ou
+zmprov dd dominio.com.br
+```
+
+---
+
 #### zmprov getDomainInfo / zmprov gdi
 
 Mostra informações de detrminado domínio. Ele precisa que seja digo o tipo de valor Sendo aceito: _name_, _id_, _virtualHostname_ 
@@ -116,32 +142,6 @@ Ex:
 zmprov gad
 ou 
 zmprov getAllDomains
-```
-
----
-
-#### zmprov cd / zmprov createDomain
-
-**cd** -> create domain.
-
-Ex:
-```bash
-zmprov cd dominio.com.br
-ou 
-zmprov createDomain dominio.com.br
-```
-
----
-
-#### zmprov dd / zmprov deleteDomain
-
-**dd** -> delete domain.
-
-Ex:
-```bash
-zmprov dd dominio.com.br
-ou 
-zmprov deleteDomain dominio.com.br
 ```
 
 ---
