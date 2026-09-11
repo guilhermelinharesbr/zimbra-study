@@ -8,6 +8,7 @@
 - [Opções Gerais](#opções-gerais)
 - [zmprov --help / zmprov -h](#zmprov---help--zmprov--h)
 - [Comandos de provisionamento de Domínio](#comandos-de-provisionamento-de-domínio)
+- [zmprov countAccount / zmprov cta](#zmprov-countaccount--zmprov-cta)
 - [zmprov getDomainInfo / zmprov gdi](#zmprov-getdomaininfo--zmprov-gdi)
 - [zmprov gad / zmprov getAllDomains](#zmprov-gad--zmprov-getalldomains)
 - [zmprov cd / zmprov createDomain](#zmprov-cd--zmprov-createdomain)
@@ -67,6 +68,19 @@ Comandos que são usados para criação, configuração, etc dos domínios no Zi
 Para descobrir o ID do domínio:
 ```bash
 zmprov gd empresa.com.br zimbraId
+```
+
+---
+
+#### zmprov countAccount / zmprov cta
+
+Serve pra contar quantas contas existem em um domínio, agrupadas por Classe de Serviço (COS), útil principalmente pra controle de licenciamento e planejamento de capacidade.
+
+Ex:
+```bash
+zmprov countAccount dominio.com.br
+ou 
+zmprov cta dominio.com.br
 ```
 
 ---
