@@ -16,9 +16,9 @@
 - [zmprov getAllDomains / zmprov gad](#zmprov-getalldomains--zmprov-gad)
 - [zmprov modifyDomain / zmprov md](#zmprov-modifydomain--zmprov-md)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
-- [zmprov gaa / zmprov getAllAccounts](#zmprov-gaa--zmprov-getallaccounts)
 - [zmprov createAccount / zmprov ca](#zmprov-createaccount--zmprov-ca)
 - [zmprov da / zmprov deleteAccount](#zmprov-da--zmprov-deleteaccount)
+- [zmprov getAllAccounts / zmprov gaa](#zmprov-getallaccounts--zmprov-gaa)
 - [zmprov ma / zmprov modifyAccount](#zmprov-ma--zmprov-modifyaccount)
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
 - [zmprov gadl / zmprov getAlldistributionLists](#zmprov-gadl--zmprov-getalldistributionlists)
@@ -190,6 +190,31 @@ Comandos que são usados para criação, configuração, etc das contas no Zimbr
 
 ---
 
+#### zmprov createAccount / zmprov ca
+
+**ca** -> create account.
+
+Cria a conta de email para o usuário Guilherme e já define a senha dele:
+```bash
+zmprov ca guilherme.linhares@dominio.com.br SuaSenhaSeguraAqui
+```
+
+Cria a conta e já define nome, sobrenome e nome de exibição:
+```bash
+zmprov ca guilherme.linhares@dominio.com.br @123456 givenName "Guilherme" sn "Linhares" displayName "Guilherme Linhares"
+```
+
+---
+
+#### zmprov da / zmprov deleteAccount
+
+Deleta uma conta de email:
+```bash
+zmprov da guilherme.linhares@dominio.com.br
+```
+
+---
+
 #### zmprov getAllAccounts / zmprov gaa
 
 **gaa** -> getAllAccounts.
@@ -214,31 +239,6 @@ Exibe o total de contas deste domínio:
 
 ```bash
 zmprov -l gaa dominio.com.br | wc -l
-```
-
----
-
-#### zmprov createAccount / zmprov ca
-
-**ca** -> create account.
-
-Cria a conta de email para o usuário Guilherme e já define a senha dele:
-```bash
-zmprov ca guilherme.linhares@dominio.com.br SuaSenhaSeguraAqui
-```
-
-Cria a conta e já define nome, sobrenome e nome de exibição:
-```bash
-zmprov ca guilherme.linhares@dominio.com.br @123456 givenName "Guilherme" sn "Linhares" displayName "Guilherme Linhares"
-```
-
----
-
-#### zmprov da / zmprov deleteAccount
-
-Deleta uma conta de email:
-```bash
-zmprov da guilherme.linhares@dominio.com.br
 ```
 
 ---
