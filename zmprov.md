@@ -19,6 +19,7 @@
 - [zmprov createAccount / zmprov ca](#zmprov-createaccount--zmprov-ca)
 - [zmprov deleteAccount / zmprov da](#zmprov-deleteaccount--zmprov-da)
 - [zmprov getAllAccounts / zmprov gaa](#zmprov-getallaccounts--zmprov-gaa)
+- [getAllAdminAccounts / zmprov gaaa](#getalladminaccounts--zmprov-gaaa)
 - [zmprov modifyAccount / zmprov ma](#zmprov-modifyaccount--zmprov-ma)
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
 - [zmprov gadl / zmprov getAlldistributionLists](#zmprov-gadl--zmprov-getalldistributionlists)
@@ -239,6 +240,17 @@ Exibe o total de contas deste domínio:
 
 ```bash
 zmprov -l gaa dominio.com.br | wc -l
+```
+
+---
+
+#### getAllAdminAccounts / zmprov gaaa 
+
+Mostra todas as contas Admin:
+```bash
+zmprov getAllAdminAccounts
+ou
+zmprov gaaa
 ```
 
 ---
