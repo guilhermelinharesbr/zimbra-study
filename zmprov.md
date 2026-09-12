@@ -19,7 +19,7 @@
 - [zmprov createAccount / zmprov ca](#zmprov-createaccount--zmprov-ca)
 - [zmprov deleteAccount / zmprov da](#zmprov-deleteaccount--zmprov-da)
 - [zmprov getAllAccounts / zmprov gaa](#zmprov-getallaccounts--zmprov-gaa)
-- [zmprov ma / zmprov modifyAccount](#zmprov-ma--zmprov-modifyaccount)
+- [zmprov modifyAccount / zmprov ma](#zmprov-modifyaccount--zmprov-ma)
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
 - [zmprov gadl / zmprov getAlldistributionLists](#zmprov-gadl--zmprov-getalldistributionlists)
 - []()
@@ -243,7 +243,7 @@ zmprov -l gaa dominio.com.br | wc -l
 
 ---
 
-#### zmprov ma / zmprov modifyAccount
+#### zmprov modifyAccount / zmprov ma
 
 Bloqueia uma conta:
 ```bash
