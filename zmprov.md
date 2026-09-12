@@ -17,7 +17,7 @@
 - [zmprov modifyDomain / zmprov md](#zmprov-modifydomain--zmprov-md)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
 - [zmprov createAccount / zmprov ca](#zmprov-createaccount--zmprov-ca)
-- [zmprov da / zmprov deleteAccount](#zmprov-da--zmprov-deleteaccount)
+- [zmprov deleteAccount / zmprov da](#zmprov-deleteaccount--zmprov-da)
 - [zmprov getAllAccounts / zmprov gaa](#zmprov-getallaccounts--zmprov-gaa)
 - [zmprov ma / zmprov modifyAccount](#zmprov-ma--zmprov-modifyaccount)
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
@@ -206,7 +206,7 @@ zmprov ca guilherme.linhares@dominio.com.br @123456 givenName "Guilherme" sn "Li
 
 ---
 
-#### zmprov da / zmprov deleteAccount
+#### zmprov deleteAccount / zmprov da 
 
 Deleta uma conta de email:
 ```bash
