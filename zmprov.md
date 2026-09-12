@@ -17,7 +17,7 @@
 - [zmprov modifyDomain / zmprov md](#zmprov-modifydomain--zmprov-md)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
 - [zmprov gaa / zmprov getAllAccounts](#zmprov-gaa--zmprov-getallaccounts)
-- [zmprov ca / zmprov createAccount](#zmprov-ca--zmprov-createaccount)
+- [zmprov createAccount / zmprov ca](#zmprov-createaccount--zmprov-ca)
 - [zmprov da / zmprov deleteAccount](#zmprov-da--zmprov-deleteaccount)
 - [zmprov ma / zmprov modifyAccount](#zmprov-ma--zmprov-modifyaccount)
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
@@ -169,7 +169,7 @@ zmprov gad
 
 ---
 
-### zmprov modifyDomain / zmprov md
+#### zmprov modifyDomain / zmprov md
 
 **md** -> modifyDomain
 
@@ -218,7 +218,7 @@ zmprov -l gaa dominio.com.br | wc -l
 
 ---
 
-#### zmprov ca / zmprov createAccount
+#### zmprov createAccount / zmprov ca
 
 **ca** -> create account.
 
