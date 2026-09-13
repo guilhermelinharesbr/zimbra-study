@@ -20,6 +20,7 @@
 - [zmprov checkPasswordStrength / zmprov cps](#zmprov-checkpasswordstrength--zmprov-cps)
 - [zmprov createAccount / zmprov ca](#zmprov-createaccount--zmprov-ca)
 - [zmprov deleteAccount / zmprov da](#zmprov-deleteaccount--zmprov-da)
+- [zmprov getAccount / zmprov ga](#zmprov-getaccount--zmprov-ga)
 - [zmprov getAllAccounts / zmprov gaa](#zmprov-getallaccounts--zmprov-gaa)
 - [getAllAdminAccounts / zmprov gaaa](#getalladminaccounts--zmprov-gaaa)
 - [zmprov modifyAccount / zmprov ma](#zmprov-modifyaccount--zmprov-ma)
@@ -252,6 +253,34 @@ zmprov ca guilherme.linhares@dominio.com.br @123456 givenName "Guilherme" sn "Li
 Deleta uma conta de email:
 ```bash
 zmprov da guilherme.linhares@dominio.com.br
+```
+
+---
+
+#### zmprov getAccount / zmprov ga
+
+Serve para puxar todos os dados de uma conta específica. Ele aceita tanto o e-mail (guilherme.linhares@dominio.com.br) quanto o UUID.
+
+Syntax:{name@domain|id|adminName}
+
+Ex. para descobrir qual é o endereço de e-mail associado ao UUID:
+```bash
+zmprov getAccount 567b0e1a-dddc-461a-b567-617aa189a567 | head -n 1
+```
+
+Ex2. para descobrir qual é o endereço de e-mail associado ao UUID:
+```bash
+zmprov ga 567b0e1a-dddc-461a-b567-617aa189a567 name
+```
+
+Ex3. conferindo Frist Name, Last Name e Display Name da conta:
+```bash
+zmprov ga guilherme.linhares@dominio.com.br givenName sn displayName
+```
+
+Ex4. mostra o ID da conta:
+```bash
+zmprov ga guilherme.linhares@dominio.com.br zimbraId
 ```
 
 ---
