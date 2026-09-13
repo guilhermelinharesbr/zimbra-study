@@ -16,6 +16,7 @@
 - [zmprov getAllDomains / zmprov gad](#zmprov-getalldomains--zmprov-gad)
 - [zmprov modifyDomain / zmprov md](#zmprov-modifydomain--zmprov-md)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
+- [zmprov addAccountAlias / zmprov aaa](#zmprov-addaccountalias--zmprov-aaa)
 - [zmprov createAccount / zmprov ca](#zmprov-createaccount--zmprov-ca)
 - [zmprov deleteAccount / zmprov da](#zmprov-deleteaccount--zmprov-da)
 - [zmprov getAllAccounts / zmprov gaa](#zmprov-getallaccounts--zmprov-gaa)
@@ -188,6 +189,22 @@ zmprov md empresa.com.br description "Empresa XYZ"
 ### Comandos de provisionamento de CONTAS
 
 Comandos que são usados para criação, configuração, etc das contas no Zimbra. 
+
+---
+
+#### zmprov addAccountAlias / zmprov aaa 
+
+Cria um apelido(alias) para a conta.
+
+{name@domain|id|adminName} {alias@domain}
+
+Ex. ao mandar um email para guilherme@dominio.com.br a conta guilherme.linhares@dominio.com.br:
+
+```bash
+zmprov addAccountAlias guilherme.linhares@dominio.com.br guilherme@dominio.com.br
+ou
+zmprov aaa guilherme.linhares@dominio.com.br guilherme@dominio.com.br
+```
 
 ---
 
