@@ -25,12 +25,12 @@
 - [getAllAdminAccounts / zmprov gaaa](#getalladminaccounts--zmprov-gaaa)
 - [zmprov modifyAccount / zmprov ma](#zmprov-modifyaccount--zmprov-ma)
 -[zmprov removeAccountAlias / zmprov raa](#zmprov-removeaccountalias--zmprov-raa)
+- [zmprov setPassword / zmprov sp](#zmprov-setpassword--zmprov-sp)
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
 - [zmprov gadl / zmprov getAlldistributionLists](#zmprov-gadl--zmprov-getalldistributionlists)
 - []()
 - []()
-- []()
-- []()
+
 
 ---
 
@@ -350,6 +350,19 @@ Ex. Removendo o apelido guilherme\@dominio.com.br da conta guilherme.linhares\@d
 zmprov removeAccountAlias guilherme.linhares@dominio.com.br guilherme@dominio.com.br
 ou
 zmprov raa guilherme.linhares@dominio.com.br guilherme@dominio.com.br
+```
+
+---
+
+#### zmprov setPassword / zmprov sp
+
+Altera a senha.
+
+Ex:
+```bash
+zmprov setPassword guilherme.linhares@dominio.com.br @senha123
+ou
+zmprov sp guilherme.linhares@dominio.com.br senha%123
 ```
 
 ---
