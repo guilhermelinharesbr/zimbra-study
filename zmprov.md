@@ -24,6 +24,7 @@
 - [zmprov getAllAccounts / zmprov gaa](#zmprov-getallaccounts--zmprov-gaa)
 - [getAllAdminAccounts / zmprov gaaa](#getalladminaccounts--zmprov-gaaa)
 - [zmprov modifyAccount / zmprov ma](#zmprov-modifyaccount--zmprov-ma)
+-[zmprov removeAccountAlias / zmprov raa](#zmprov-removeaccountalias--zmprov-raa)
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
 - [zmprov gadl / zmprov getAlldistributionLists](#zmprov-gadl--zmprov-getalldistributionlists)
 - []()
@@ -200,7 +201,7 @@ Cria um apelido(alias) para a conta.
 
 {name@domain|id|adminName} {alias@domain}
 
-Ex. ao mandar um email para guilherme@dominio.com.br a conta guilherme.linhares@dominio.com.br:
+Ex. ao mandar um email para guilherme\@dominio.com.br a conta guilherme.linhares\@dominio.com.br:
 
 ```bash
 zmprov addAccountAlias guilherme.linhares@dominio.com.br guilherme@dominio.com.br
@@ -259,7 +260,7 @@ zmprov da guilherme.linhares@dominio.com.br
 
 #### zmprov getAccount / zmprov ga
 
-Serve para puxar todos os dados de uma conta específica. Ele aceita tanto o e-mail (guilherme.linhares@dominio.com.br) quanto o UUID.
+Serve para puxar todos os dados de uma conta específica. Ele aceita tanto o e-mail (guilherme.linhares\@dominio.com.br) quanto o UUID.
 
 Syntax:{name@domain|id|adminName}
 
@@ -334,6 +335,21 @@ zmprov ma guilherme.linhares@dominio.com.br zimbraAccountStatus locked
 Desbloqueia uma conta:
 ```bash
 zmprov ma guilherme.linhares@dominio.com.br zimbraAccountStatus active
+```
+
+---
+
+#### zmprov removeAccountAlias / zmprov raa
+
+Remove um apelido(alias) de uma conta.
+
+{name@domain|id|adminName} {alias@domain}
+
+Ex. Removendo o apelido guilherme\@dominio.com.br da conta guilherme.linhares\@dominio.com.br:
+```bash
+zmprov removeAccountAlias guilherme.linhares@dominio.com.br guilherme@dominio.com.br
+ou
+zmprov raa guilherme.linhares@dominio.com.br guilherme@dominio.com.br
 ```
 
 ---
