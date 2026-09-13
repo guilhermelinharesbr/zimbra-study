@@ -17,6 +17,7 @@
 - [zmprov modifyDomain / zmprov md](#zmprov-modifydomain--zmprov-md)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
 - [zmprov addAccountAlias / zmprov aaa](#zmprov-addaccountalias--zmprov-aaa)
+- [zmprov checkPasswordStrength / zmprov cps](#zmprov-checkpasswordstrength--zmprov-cps)
 - [zmprov createAccount / zmprov ca](#zmprov-createaccount--zmprov-ca)
 - [zmprov deleteAccount / zmprov da](#zmprov-deleteaccount--zmprov-da)
 - [zmprov getAllAccounts / zmprov gaa](#zmprov-getallaccounts--zmprov-gaa)
@@ -205,6 +206,28 @@ zmprov addAccountAlias guilherme.linhares@dominio.com.br guilherme@dominio.com.b
 ou
 zmprov aaa guilherme.linhares@dominio.com.br guilherme@dominio.com.br
 ```
+
+---
+
+#### zmprov checkPasswordStrength / zmprov cps 
+
+Checa a força/complexidade da senha.
+
+Syntax: {name@domain|id} {password}
+
+Ex:
+```bash
+zmprov checkPasswordStrength guilherme.linhares@dominio.com.br Pa$$word123
+```
+Saída: Password passed strength check.
+
+Ex2:
+```bash
+zmprov cps guilherme.linhares@dominio.com.br 123
+```
+Saída: ERROR: account.INVALID_PASSWORD (invalid password: too short)
+
+Obs: Este comando não checa a idade ou histórico de senha.
 
 ---
 
