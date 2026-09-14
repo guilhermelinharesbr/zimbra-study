@@ -28,6 +28,7 @@
 - [zmprov setPassword / zmprov sp](#zmprov-setpassword--zmprov-sp)
 - [Comandos de provisionamento de LISTAS DE DISTRIBUIÇÃO](#comandos-de-provisionamento-de-listas-de-distribuição)
 - [zmprov createDistributionList / zmprov cdl](#zmprov-createdistributionlist--zmprov-cdl)
+- [zmprov addDistributionListMember / zmprov adlm](#zmprov-adddistributionlistmember--zmprov-adlm)
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
 - [zmprov gadl / zmprov getAlldistributionLists](#zmprov-gadl--zmprov-getalldistributionlists)
 - []()
@@ -387,6 +388,20 @@ zmgsautil forceSync -a galsync@dominio.com.br -n zimbra
 
 Obs.: O segundo comando é usado para forçar sincronizar a nova lista na GAL.
 
+---
+
+#### zmprov addDistributionListMember / zmprov adlm
+
+Adiciona um membro em uma lista de distribuição.
+
+Syntax: {list@domain|id} {member@domain}
+
+Ex:
+```bash
+zmprov addDistributionListMember equipe.financeiro@dominio.com.br guilherme.linhares@dominio.com.br
+ou
+zmprov adlm equipe.financeiro@dominio.com.br guilherme.linhares@dominio.com.br
+```
 
 ---
 
