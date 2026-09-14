@@ -31,6 +31,7 @@
 - [zmprov addDistributionListMember / zmprov adlm](#zmprov-adddistributionlistmember--zmprov-adlm)
 - [zmprov removeDistributionListMember / zmprov rdlm](#zmprov-removedistributionlistmember--zmprov-rdlm)
 - [zmprov getAlldistributionLists / zmprov gadl](#zmprov-getalldistributionlists--zmprov-gadl)
+- [zmprov getDistributionListmembership / zmprov gdlm](#zmprov-getdistributionlistmembership--zmprov-gdlm)
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
 - [zmprov gadl / zmprov getAlldistributionLists](#zmprov-gadl--zmprov-getalldistributionlists)
 - []()
@@ -440,6 +441,29 @@ Ex2. todas as listas de distribuição apenas do domínio dominio\.com.br:
 zmprov getAlldistributionLists dominio.com.br
 ou
 zmprov gadl dominio.com.br
+```
+
+Ex3. mostrando mais detalhes das listas de distribuição:
+
+```bash
+zmprov getAlldistributionLists -v
+zmprov gadl dominio.com.br -v
+```
+
+Obs: Ao upsar a opção `-v` são exibidos mais detalhes como quantidade de membros, email dos membros, etc.
+
+---
+
+#### zmprov getDistributionListmembership / zmprov gdlm
+
+Exibi os membros das listas de distribuição.
+
+Ex:
+
+```bash
+zmprov getDistributionListmembership equipe.financeiro@dominio.com.br
+ou
+zmprov gdlm equipe.financeiro@dominio.com.br
 ```
 
 ---
