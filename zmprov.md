@@ -26,6 +26,7 @@
 - [zmprov modifyAccount / zmprov ma](#zmprov-modifyaccount--zmprov-ma)
 -[zmprov removeAccountAlias / zmprov raa](#zmprov-removeaccountalias--zmprov-raa)
 - [zmprov setPassword / zmprov sp](#zmprov-setpassword--zmprov-sp)
+- [Comandos de provisionamento de LISTAS DE DISTRIBUIÇÃO](#comandos-de-provisionamento-de-listas-de-distribuição)
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
 - [zmprov gadl / zmprov getAlldistributionLists](#zmprov-gadl--zmprov-getalldistributionlists)
 - []()
@@ -364,6 +365,12 @@ zmprov setPassword guilherme.linhares@dominio.com.br @senha123
 ou
 zmprov sp guilherme.linhares@dominio.com.br senha%123
 ```
+
+---
+
+#### Comandos de provisionamento de LISTAS DE DISTRIBUIÇÃO
+
+Comandos que são usados para criação, configuração, etc das listas de distribuição no Zimbra. 
 
 ---
 
