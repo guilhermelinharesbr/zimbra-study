@@ -24,9 +24,10 @@
 - [zmprov getAllAccounts / zmprov gaa](#zmprov-getallaccounts--zmprov-gaa)
 - [getAllAdminAccounts / zmprov gaaa](#getalladminaccounts--zmprov-gaaa)
 - [zmprov modifyAccount / zmprov ma](#zmprov-modifyaccount--zmprov-ma)
--[zmprov removeAccountAlias / zmprov raa](#zmprov-removeaccountalias--zmprov-raa)
+- [zmprov removeAccountAlias / zmprov raa](#zmprov-removeaccountalias--zmprov-raa)
 - [zmprov setPassword / zmprov sp](#zmprov-setpassword--zmprov-sp)
 - [Comandos de provisionamento de LISTAS DE DISTRIBUIÇÃO](#comandos-de-provisionamento-de-listas-de-distribuição)
+- [zmprov createDistributionList / zmprov cdl](#zmprov-createdistributionlist--zmprov-cdl)
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
 - [zmprov gadl / zmprov getAlldistributionLists](#zmprov-gadl--zmprov-getalldistributionlists)
 - []()
@@ -371,6 +372,21 @@ zmprov sp guilherme.linhares@dominio.com.br senha%123
 #### Comandos de provisionamento de LISTAS DE DISTRIBUIÇÃO
 
 Comandos que são usados para criação, configuração, etc das listas de distribuição no Zimbra. 
+
+---
+
+#### zmprov createDistributionList / zmprov cdl
+
+Cria uma lista de distribuição.
+
+Ex. de criar a lista de distribuição já com o display name:
+```bash
+zmprov cdl equipe.financeiro@dominio.com.br displayName "Equipe do Financeiro"
+zmgsautil forceSync -a galsync@dominio.com.br -n zimbra
+```
+
+Obs.: O segundo comando é usado para forçar sincronizar a nova lista na GAL.
+
 
 ---
 
