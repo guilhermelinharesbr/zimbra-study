@@ -29,6 +29,7 @@
 - [Comandos de provisionamento de LISTAS DE DISTRIBUIÇÃO](#comandos-de-provisionamento-de-listas-de-distribuição)
 - [zmprov createDistributionList / zmprov cdl](#zmprov-createdistributionlist--zmprov-cdl)
 - [zmprov addDistributionListMember / zmprov adlm](#zmprov-adddistributionlistmember--zmprov-adlm)
+- [zmprov removeDistributionListMember / zmprov rdlm](#zmprov-removedistributionlistmember--zmprov-rdlm)
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
 - [zmprov gadl / zmprov getAlldistributionLists](#zmprov-gadl--zmprov-getalldistributionlists)
 - []()
@@ -401,6 +402,21 @@ Ex:
 zmprov addDistributionListMember equipe.financeiro@dominio.com.br guilherme.linhares@dominio.com.br
 ou
 zmprov adlm equipe.financeiro@dominio.com.br guilherme.linhares@dominio.com.br
+```
+
+---
+
+#### zmprov removeDistributionListMember / zmprov rdlm
+
+Remove um membro em uma lista de distribuição.
+
+Syntax: {list@domain|id} {member@domain}
+
+Ex:
+```bash
+zmprov removeDistributionListMember equipe.financeiro@dominio.com.br guilherme.linhares@dominio.com.br
+ou
+zmprov rdlm equipe.financeiro@dominio.com.br guilherme.linhares@dominio.com.br
 ```
 
 ---
