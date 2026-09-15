@@ -35,6 +35,7 @@
 - [zmprov getDistributionList / zmprov gdl](#zmprov-getdistributionlist--zmprov-gdl)
 - [zmprov modifyDistributionList / zmprov mdl](#zmprov-modifydistributionlist--zmprov-mdl)
 - [zmprov deleteDistributionList / zmprov ddl](#zmprov-deletedistributionlist--zmprov-ddl)
+- [zmprov addDistributionListAlias / zmprov adla](#zmprov-adddistributionlistalias--zmprov-adla)
 -
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
 - [zmprov gadl / zmprov getAlldistributionLists](#zmprov-gadl--zmprov-getalldistributionlists)
@@ -522,6 +523,22 @@ Ex:
 zmprov deleteDistributionList equipe.financeiro@dominio.com.br
 ou
 zmprov ddl equipe.financeiro@dominio.com.br
+```
+
+---
+
+#### zmprov addDistributionListAlias / zmprov adla
+
+Adiciona um apelido(alias) para uma lista de distribuição.
+
+Syntax: {list@domain|id} {alias@domain}
+
+Ex. cria o alias colaboradores.financeiro\@dominio.com.br para a lista equipe.financeiro\@dominio.com.br:
+
+```bash
+zmprov addDistributionListAlias equipe.financeiro@dominio.com.br colaboradores.financeiro@dominio.com.br
+ou
+zmprov adla equipe.financeiro@dominio.com.br colaboradores.financeiro@dominio.com.br
 ```
 
 ---
