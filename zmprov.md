@@ -34,6 +34,7 @@
 - [zmprov getDistributionListmembership / zmprov gdlm](#zmprov-getdistributionlistmembership--zmprov-gdlm)
 - [zmprov getDistributionList / zmprov gdl](#zmprov-getdistributionlist--zmprov-gdl)
 - [zmprov modifyDistributionList / zmprov mdl](#zmprov-modifydistributionlist--zmprov-mdl)
+- [zmprov deleteDistributionList / zmprov ddl](#zmprov-deletedistributionlist--zmprov-ddl)
 -
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
 - [zmprov gadl / zmprov getAlldistributionLists](#zmprov-gadl--zmprov-getalldistributionlists)
@@ -498,13 +499,29 @@ Syntax: {list@domain|id} attr1 value1 {attr2 value2...}
 Ex. mudando a descrição de uma lista:
 
 ```bash
-zmprov mdl equipe.financeiro@dominio.com.br  description "Lista usada para mandar emails para os colaboradores do setor Financeiro"
+zmprov modifyDistributionList equipe.financeiro@dominio.com.br  description "Lista usada para mandar emails para os colaboradores do setor Financeiro"
 ```
 
 Ex2. mudando o display name de uma lista:
 
 ```bash
 zmprov mdl equipe.financeiro@dominio.com.br displayName "Equipe Financeiro"
+```
+
+---
+
+#### zmprov deleteDistributionList / zmprov ddl
+
+Deleta uma lista de distribuição.
+
+Syntax: {list@domain|id}
+
+Ex:
+
+```bash
+zmprov deleteDistributionList equipe.financeiro@dominio.com.br
+ou
+zmprov ddl equipe.financeiro@dominio.com.br
 ```
 
 ---
