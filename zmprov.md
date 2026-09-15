@@ -32,6 +32,7 @@
 - [zmprov removeDistributionListMember / zmprov rdlm](#zmprov-removedistributionlistmember--zmprov-rdlm)
 - [zmprov getAlldistributionLists / zmprov gadl](#zmprov-getalldistributionlists--zmprov-gadl)
 - [zmprov getDistributionListmembership / zmprov gdlm](#zmprov-getdistributionlistmembership--zmprov-gdlm)
+- [zmprov getDistributionList / zmprov gdl](#zmprov-getdistributionlist--zmprov-gdl)
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
 - [zmprov gadl / zmprov getAlldistributionLists](#zmprov-gadl--zmprov-getalldistributionlists)
 - []()
@@ -464,6 +465,24 @@ Ex:
 zmprov getDistributionListmembership equipe.financeiro@dominio.com.br
 ou
 zmprov gdlm equipe.financeiro@dominio.com.br
+```
+
+---
+
+#### zmprov getDistributionList / zmprov gdl
+
+Mostra informações de uma lista de distribuição, como ID, membros, quando foi criada, se está habilitada ou desabilitada, etc.
+
+Ex:
+
+```bash
+zmprov gdl equipe.financeiro@dominio.com.br 
+```
+
+Ex2. : Serve para exportar a lista de todos os membros (e-mails) do grupo equipe.financeiro\@dominio.com.br para dentro de um arquivo de texto chamado saida-zmprov.txt:
+
+```bash
+zmprov gdl lista@dnocs.gov.br > saida-zmprov.txt
 ```
 
 ---
