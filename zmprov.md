@@ -9,7 +9,7 @@
 - [zmprov --help / zmprov -h](#zmprov---help--zmprov--h)
 - [Comandos de provisionamento de DOMÍNIO](#comandos-de-provisionamento-de-domínio)
 - [countAccount / cta](#countaccount--cta)
-- [zmprov createDomain / zmprov cd](#zmprov-createdomain--zmprov-cd)
+- [createDomain / cd](#createdomain--cd)
 - [zmprov deleteDomain / zmprov dd](#zmprov-deletedomain--zmprov-dd)
 - [zmprov getDomain / zmprov gd](#zmprov-getdomain--zmprov-gd)
 - [zmprov getDomainInfo / zmprov gdi](#zmprov-getdomaininfo--zmprov-gdi)
@@ -96,7 +96,7 @@ zmprov cta dominio.com.br
 
 ---
 
-#### zmprov createDomain / zmprov cd
+#### createDomain / cd
 
 **cd** -> create domain.
 
