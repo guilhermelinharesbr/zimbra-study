@@ -11,7 +11,7 @@
 - [countAccount / cta](#countaccount--cta)
 - [createDomain / cd](#createdomain--cd)
 - [deleteDomain / dd](#deletedomain--dd)
-- [zmprov getDomain / zmprov gd](#zmprov-getdomain--zmprov-gd)
+- [getDomain / gd](#getdomain--gd)
 - [zmprov getDomainInfo / zmprov gdi](#zmprov-getdomaininfo--zmprov-gdi)
 - [zmprov getAllDomains / zmprov gad](#zmprov-getalldomains--zmprov-gad)
 - [zmprov modifyDomain / zmprov md](#zmprov-modifydomain--zmprov-md)
@@ -122,7 +122,7 @@ zmprov dd dominio.com.br
 
 ---
 
-#### zmprov getDomain / zmprov gd
+#### getDomain / gd
 
 **gd** -> getDomain.
 
