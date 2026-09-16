@@ -37,6 +37,7 @@
 - [zmprov deleteDistributionList / zmprov ddl](#zmprov-deletedistributionlist--zmprov-ddl)
 - [zmprov addDistributionListAlias / zmprov adla](#zmprov-adddistributionlistalias--zmprov-adla)
 - [zmprov removeDistributionListAlias / zmprov rdla](#zmprov-removedistributionlistalias--zmprov-rdla)
+- [zmprov renameDistributionList / zmprov rdl](#zmprov-renamedistributionlist--zmprov-rdl)
 -
 - [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
 - [zmprov gadl / zmprov getAlldistributionLists](#zmprov-gadl--zmprov-getalldistributionlists)
@@ -556,6 +557,22 @@ Ex. remove o alias colaboradores.financeiro\@dominio.com.br para a lista equipe.
 zmprov removeDistributionListAlias equipe.financeiro@dominio.com.br colaboradores.financeiro@dominio.com.br
 ou
 zmprov rdla equipe.financeiro@dominio.com.br colaboradores.financeiro@dominio.com.br
+```
+
+---
+
+#### zmprov renameDistributionList / zmprov rdl
+
+Renomeia uma lista de distribuição.
+
+Syntax: {list@domain|id} {newName@domain}
+
+Ex. renomeando a lista de distribuição equipe.financeiro\@dominio.com.br para apenas financeiro\@dominio.com.br:
+
+```bash
+zmprov renameDistributionList equipe.financeiro@dominio.com.br financeiro@dominio.com.br
+ou
+zmprov rdl equipe.financeiro@dominio.com.br financeiro@dominio.com.br
 ```
 
 ---
