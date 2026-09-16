@@ -38,9 +38,8 @@
 - [zmprov addDistributionListAlias / zmprov adla](#zmprov-adddistributionlistalias--zmprov-adla)
 - [zmprov removeDistributionListAlias / zmprov rdla](#zmprov-removedistributionlistalias--zmprov-rdla)
 - [zmprov renameDistributionList / zmprov rdl](#zmprov-renamedistributionlist--zmprov-rdl)
--
-- [zmprov gsi / zmprov getShareInfo](#zmprov-gsi--zmprov-getshareinfo)
-- [zmprov gadl / zmprov getAlldistributionLists](#zmprov-gadl--zmprov-getalldistributionlists)
+- []()
+- [getShareInfo / gsi](#getshareinfo--gsi)
 - []()
 - []()
 
@@ -581,28 +580,15 @@ zmprov rdl equipe.financeiro@dominio.com.br financeiro@dominio.com.br
 
 ---
 
-#### zmprov gsi / zmprov getShareInfo
+#### getShareInfo / gsi 
 
 Esse comando retorna informações sobre compartilhamentos publicados, quando o proprietário é especificado, o servidor percorre a mailbox dele pra descobrir todos os compartilhamentos aplicáveis. A saída inclui todos os campos importantes: id do dono, e-mail do dono, id da pasta, caminho completo da pasta, tipo de visualização, direitos concedidos, tipo de concessão (grantee), id e nome do concessionário.
 
 Ex:
 ```bash
-zmprov gsi financeiro@dominio.com.br
-ou
 zmprov getShareInfo financeiro@dominio.com.br
-```
-
----
-
-#### zmprov gadl / zmprov getAlldistributionLists
-
-Exibe em todas as listas de distribuição.
-
-Ex:
-```bash
-zmprov gadl dominio.com.br
 ou
-zmprov getAlldistributionLists dominio.com.br
+zmprov gsi financeiro@dominio.com.br
 ```
 
 ---
