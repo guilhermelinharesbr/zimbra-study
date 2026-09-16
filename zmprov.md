@@ -10,7 +10,7 @@
 - [Comandos de provisionamento de DOMÍNIO](#comandos-de-provisionamento-de-domínio)
 - [countAccount / cta](#countaccount--cta)
 - [createDomain / cd](#createdomain--cd)
-- [zmprov deleteDomain / zmprov dd](#zmprov-deletedomain--zmprov-dd)
+- [deleteDomain / dd](#deletedomain--dd)
 - [zmprov getDomain / zmprov gd](#zmprov-getdomain--zmprov-gd)
 - [zmprov getDomainInfo / zmprov gdi](#zmprov-getdomaininfo--zmprov-gdi)
 - [zmprov getAllDomains / zmprov gad](#zmprov-getalldomains--zmprov-gad)
@@ -109,7 +109,7 @@ zmprov cd dominio.com.br
 
 ---
 
-#### zmprov deleteDomain / zmprov dd
+#### deleteDomain / dd
 
 **dd** -> deleteDomain.
 
