@@ -8,7 +8,7 @@
 - [Opções Gerais](#opções-gerais)
 - [zmprov --help / zmprov -h](#zmprov---help--zmprov--h)
 - [Comandos de provisionamento de DOMÍNIO](#comandos-de-provisionamento-de-domínio)
-- [zmprov countAccount / zmprov cta](#zmprov-countaccount--zmprov-cta)
+- [countAccount / cta](#countaccount--cta)
 - [zmprov createDomain / zmprov cd](#zmprov-createdomain--zmprov-cd)
 - [zmprov deleteDomain / zmprov dd](#zmprov-deletedomain--zmprov-dd)
 - [zmprov getDomain / zmprov gd](#zmprov-getdomain--zmprov-gd)
@@ -38,7 +38,7 @@
 - [zmprov addDistributionListAlias / zmprov adla](#zmprov-adddistributionlistalias--zmprov-adla)
 - [zmprov removeDistributionListAlias / zmprov rdla](#zmprov-removedistributionlistalias--zmprov-rdla)
 - [zmprov renameDistributionList / zmprov rdl](#zmprov-renamedistributionlist--zmprov-rdl)
-- []()
+- [Comandos de provisionamento de COMPARTILHAMENTO](#)
 - [getShareInfo / gsi](#getshareinfo--gsi)
 - []()
 - []()
@@ -83,7 +83,7 @@ Comandos que são usados para criação, configuração, etc dos domínios no Zi
 
 ---
 
-#### zmprov countAccount / zmprov cta
+#### countAccount / cta
 
 Serve pra contar quantas contas existem em um domínio, agrupadas por Classe de Serviço (COS), útil principalmente pra controle de licenciamento e planejamento de capacidade.
 
@@ -576,7 +576,9 @@ zmprov rdl equipe.financeiro@dominio.com.br financeiro@dominio.com.br
 
 ---
 
-# Para Editar
+### Comandos de provisionamento de COMPARTILHAMENTO
+
+
 
 ---
 
