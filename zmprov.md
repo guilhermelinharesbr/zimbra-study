@@ -16,9 +16,9 @@
 - [getAllDomains / gad](#getalldomains--gad)
 - [modifyDomain / md](#modifydomain--md)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
-- [zmprov addAccountAlias / zmprov aaa](#zmprov-addaccountalias--zmprov-aaa)
-- [zmprov checkPasswordStrength / zmprov cps](#zmprov-checkpasswordstrength--zmprov-cps)
-- [zmprov createAccount / zmprov ca](#zmprov-createaccount--zmprov-ca)
+- [addAccountAlias / aaa](#addaccountalias--aaa)
+- [checkPasswordStrength / cps](#checkpasswordstrength--cps)
+- [createAccount / ca](#createaccount--ca)
 - [zmprov deleteAccount / zmprov da](#zmprov-deleteaccount--zmprov-da)
 - [zmprov getAccount / zmprov ga](#zmprov-getaccount--zmprov-ga)
 - [zmprov getAllAccounts / zmprov gaa](#zmprov-getallaccounts--zmprov-gaa)
@@ -207,7 +207,7 @@ Comandos que são usados para criação, configuração, etc das contas no Zimbr
 
 ---
 
-#### zmprov addAccountAlias / zmprov aaa 
+#### addAccountAlias / aaa 
 
 Cria um apelido(alias) para a conta.
 
@@ -223,7 +223,7 @@ zmprov aaa guilherme.linhares@dominio.com.br guilherme@dominio.com.br
 
 ---
 
-#### zmprov checkPasswordStrength / zmprov cps 
+#### checkPasswordStrength / cps
 
 Checa a força/complexidade da senha.
 
@@ -245,7 +245,7 @@ Obs: Este comando não checa a idade ou histórico de senha.
 
 ---
 
-#### zmprov createAccount / zmprov ca
+#### createAccount / ca
 
 **ca** -> create account.
 
