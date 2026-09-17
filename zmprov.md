@@ -22,9 +22,9 @@
 - [deleteAccount / da](#deleteaccount--da)
 - [getAccount / ga](#getaccount--ga)
 - [getAllAccounts / gaa](#getallaccounts--gaa)
-- [getAllAdminAccounts / zmprov gaaa](#getalladminaccounts--zmprov-gaaa)
-- [zmprov modifyAccount / zmprov ma](#zmprov-modifyaccount--zmprov-ma)
-- [zmprov removeAccountAlias / zmprov raa](#zmprov-removeaccountalias--zmprov-raa)
+- [getAllAdminAccounts / gaaa](#getalladminaccounts--gaaa)
+- [modifyAccount / ma](#modifyaccount--ma)
+- [removeAccountAlias / raa](#removeaccountalias--raa)
 - [zmprov setPassword / zmprov sp](#zmprov-setpassword--zmprov-sp)
 - [Comandos de provisionamento de LISTAS DE DISTRIBUIÇÃO](#comandos-de-provisionamento-de-listas-de-distribuição)
 - [zmprov createDistributionList / zmprov cdl](#zmprov-createdistributionlist--zmprov-cdl)
@@ -326,7 +326,7 @@ zmprov -l gaa dominio.com.br | wc -l
 
 ---
 
-#### getAllAdminAccounts / zmprov gaaa 
+#### getAllAdminAccounts / gaaa
 
 Mostra todas as contas Admin:
 ```bash
@@ -337,7 +337,7 @@ zmprov gaaa
 
 ---
 
-#### zmprov modifyAccount / zmprov ma
+#### modifyAccount / ma
 
 Bloqueia uma conta:
 ```bash
@@ -351,7 +351,7 @@ zmprov ma guilherme.linhares@dominio.com.br zimbraAccountStatus active
 
 ---
 
-#### zmprov removeAccountAlias / zmprov raa
+#### removeAccountAlias / raa
 
 Remove um apelido(alias) de uma conta.
 
