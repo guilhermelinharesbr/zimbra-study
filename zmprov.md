@@ -12,9 +12,9 @@
 - [createDomain / cd](#createdomain--cd)
 - [deleteDomain / dd](#deletedomain--dd)
 - [getDomain / gd](#getdomain--gd)
-- [zmprov getDomainInfo / zmprov gdi](#zmprov-getdomaininfo--zmprov-gdi)
-- [zmprov getAllDomains / zmprov gad](#zmprov-getalldomains--zmprov-gad)
-- [zmprov modifyDomain / zmprov md](#zmprov-modifydomain--zmprov-md)
+- [getDomainInfo / gdi](#getdomaininfo--gdi)
+- [getAllDomains / gad](#getalldomains--gad)
+- [modifyDomain / md](#modifydomain--md)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
 - [zmprov addAccountAlias / zmprov aaa](#zmprov-addaccountalias--zmprov-aaa)
 - [zmprov checkPasswordStrength / zmprov cps](#zmprov-checkpasswordstrength--zmprov-cps)
@@ -151,7 +151,7 @@ zmprov gd 5679d38a-2bc5-4f76-a4e0-ea218d879567 zimbraId
 
 ---
 
-#### zmprov getDomainInfo / zmprov gdi
+#### getDomainInfo / gdi
 
 Mostra informações de detrminado domínio. Ele precisa que seja digo o tipo de valor Sendo aceito: _name_, _id_, _virtualHostname_ 
 
@@ -173,7 +173,7 @@ zmprov gdi id a56da796-0edd-4023-8329-edb344158567
 
 ---
 
-#### zmprov getAllDomains / zmprov gad
+#### getAllDomains / gad
 
 **gad** -> getAllDomains.
 
@@ -186,7 +186,7 @@ zmprov gad
 
 ---
 
-#### zmprov modifyDomain / zmprov md
+#### modifyDomain / md
 
 **md** -> modifyDomain
 
