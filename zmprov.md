@@ -25,7 +25,7 @@
 - [getAllAdminAccounts / gaaa](#getalladminaccounts--gaaa)
 - [modifyAccount / ma](#modifyaccount--ma)
 - [removeAccountAlias / raa](#removeaccountalias--raa)
-- [zmprov setPassword / zmprov sp](#zmprov-setpassword--zmprov-sp)
+- [setPassword / sp](#setpassword--sp)
 - [Comandos de provisionamento de LISTAS DE DISTRIBUIÇÃO](#comandos-de-provisionamento-de-listas-de-distribuição)
 - [zmprov createDistributionList / zmprov cdl](#zmprov-createdistributionlist--zmprov-cdl)
 - [zmprov addDistributionListMember / zmprov adlm](#zmprov-adddistributionlistmember--zmprov-adlm)
@@ -366,7 +366,7 @@ zmprov raa guilherme.linhares@dominio.com.br guilherme@dominio.com.br
 
 ---
 
-#### zmprov setPassword / zmprov sp
+#### setPassword / sp
 
 Altera a senha.
 
