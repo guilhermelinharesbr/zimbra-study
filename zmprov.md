@@ -19,9 +19,9 @@
 - [addAccountAlias / aaa](#addaccountalias--aaa)
 - [checkPasswordStrength / cps](#checkpasswordstrength--cps)
 - [createAccount / ca](#createaccount--ca)
-- [zmprov deleteAccount / zmprov da](#zmprov-deleteaccount--zmprov-da)
-- [zmprov getAccount / zmprov ga](#zmprov-getaccount--zmprov-ga)
-- [zmprov getAllAccounts / zmprov gaa](#zmprov-getallaccounts--zmprov-gaa)
+- [deleteAccount / da](#deleteaccount--da)
+- [getAccount / ga](#getaccount--ga)
+- [getAllAccounts / gaa](#getallaccounts--gaa)
 - [getAllAdminAccounts / zmprov gaaa](#getalladminaccounts--zmprov-gaaa)
 - [zmprov modifyAccount / zmprov ma](#zmprov-modifyaccount--zmprov-ma)
 - [zmprov removeAccountAlias / zmprov raa](#zmprov-removeaccountalias--zmprov-raa)
@@ -261,7 +261,7 @@ zmprov ca guilherme.linhares@dominio.com.br @123456 givenName "Guilherme" sn "Li
 
 ---
 
-#### zmprov deleteAccount / zmprov da 
+#### deleteAccount / da 
 
 Deleta uma conta de email:
 ```bash
@@ -270,7 +270,7 @@ zmprov da guilherme.linhares@dominio.com.br
 
 ---
 
-#### zmprov getAccount / zmprov ga
+#### getAccount / ga
 
 Serve para puxar todos os dados de uma conta específica. Ele aceita tanto o e-mail (guilherme.linhares\@dominio.com.br) quanto o UUID.
 
@@ -298,7 +298,7 @@ zmprov ga guilherme.linhares@dominio.com.br zimbraId
 
 ---
 
-#### zmprov getAllAccounts / zmprov gaa
+#### getAllAccounts / gaa
 
 **gaa** -> getAllAccounts.
 
