@@ -31,9 +31,9 @@
 - [addDistributionListMember / adlm](#adddistributionlistmember--adlm)
 - [removeDistributionListMember / rdlm](#removedistributionlistmember--rdlm)
 - [getAlldistributionLists / gadl](#getalldistributionlists--gadl)
-- [zmprov getDistributionListmembership / zmprov gdlm](#zmprov-getdistributionlistmembership--zmprov-gdlm)
-- [zmprov getDistributionList / zmprov gdl](#zmprov-getdistributionlist--zmprov-gdl)
-- [zmprov modifyDistributionList / zmprov mdl](#zmprov-modifydistributionlist--zmprov-mdl)
+- [getDistributionListmembership / gdlm](#getdistributionlistmembership--gdlm)
+- [getDistributionList / gdl](#getdistributionlist--gdl)
+- [modifyDistributionList / mdl](#modifydistributionlist--mdl)
 - [zmprov deleteDistributionList / zmprov ddl](#zmprov-deletedistributionlist--zmprov-ddl)
 - [zmprov addDistributionListAlias / zmprov adla](#zmprov-adddistributionlistalias--zmprov-adla)
 - [zmprov removeDistributionListAlias / zmprov rdla](#zmprov-removedistributionlistalias--zmprov-rdla)
@@ -460,7 +460,7 @@ Obs: Ao upsar a opção `-v` são exibidos mais detalhes como quantidade de memb
 
 ---
 
-#### zmprov getDistributionListmembership / zmprov gdlm
+#### getDistributionListmembership / gdlm
 
 Exibi os membros das listas de distribuição.
 
@@ -474,7 +474,7 @@ zmprov gdlm equipe.financeiro@dominio.com.br
 
 ---
 
-#### zmprov getDistributionList / zmprov gdl
+#### getDistributionList / gdl
 
 Mostra informações de uma lista de distribuição, como ID, membros, quando foi criada, se está habilitada ou desabilitada, etc.
 
@@ -492,7 +492,7 @@ zmprov gdl lista@dnocs.gov.br > saida-zmprov.txt
 
 ---
 
-#### zmprov modifyDistributionList / zmprov mdl
+#### modifyDistributionList / mdl
 
 Usado para editar atirbutos de uma lista de distribuição.
 
