@@ -28,7 +28,7 @@
 - [setPassword / sp](#setpassword--sp)
 - [Comandos de provisionamento de LISTAS DE DISTRIBUIÇÃO](#comandos-de-provisionamento-de-listas-de-distribuição)
 - [createDistributionList / cdl](#createdistributionlist--cdl)
-- [zmprov addDistributionListMember / zmprov adlm](#zmprov-adddistributionlistmember--zmprov-adlm)
+- [addDistributionListMember / adlm](#adddistributionlistmember--adlm)
 - [zmprov removeDistributionListMember / zmprov rdlm](#zmprov-removedistributionlistmember--zmprov-rdlm)
 - [zmprov getAlldistributionLists / zmprov gadl](#zmprov-getalldistributionlists--zmprov-gadl)
 - [zmprov getDistributionListmembership / zmprov gdlm](#zmprov-getdistributionlistmembership--zmprov-gdlm)
@@ -399,7 +399,7 @@ Obs.: O segundo comando é usado para forçar sincronizar a nova lista na GAL.
 
 ---
 
-#### zmprov addDistributionListMember / zmprov adlm
+#### addDistributionListMember / adlm
 
 Adiciona um membro em uma lista de distribuição.
 
