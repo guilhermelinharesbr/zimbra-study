@@ -29,8 +29,8 @@
 - [Comandos de provisionamento de LISTAS DE DISTRIBUIÇÃO](#comandos-de-provisionamento-de-listas-de-distribuição)
 - [createDistributionList / cdl](#createdistributionlist--cdl)
 - [addDistributionListMember / adlm](#adddistributionlistmember--adlm)
-- [zmprov removeDistributionListMember / zmprov rdlm](#zmprov-removedistributionlistmember--zmprov-rdlm)
-- [zmprov getAlldistributionLists / zmprov gadl](#zmprov-getalldistributionlists--zmprov-gadl)
+- [removeDistributionListMember / rdlm](#removedistributionlistmember--rdlm)
+- [getAlldistributionLists / gadl](#getalldistributionlists--gadl)
 - [zmprov getDistributionListmembership / zmprov gdlm](#zmprov-getdistributionlistmembership--zmprov-gdlm)
 - [zmprov getDistributionList / zmprov gdl](#zmprov-getdistributionlist--zmprov-gdl)
 - [zmprov modifyDistributionList / zmprov mdl](#zmprov-modifydistributionlist--zmprov-mdl)
@@ -414,7 +414,7 @@ zmprov adlm equipe.financeiro@dominio.com.br guilherme.linhares@dominio.com.br
 
 ---
 
-#### zmprov removeDistributionListMember / zmprov rdlm
+#### removeDistributionListMember / rdlm
 
 Remove um membro em uma lista de distribuição.
 
@@ -429,7 +429,7 @@ zmprov rdlm equipe.financeiro@dominio.com.br guilherme.linhares@dominio.com.br
 
 ---
 
-#### zmprov getAlldistributionLists / zmprov gadl
+#### getAlldistributionLists / gadl
 
 Exibi todas as listas de distribuição.
 
