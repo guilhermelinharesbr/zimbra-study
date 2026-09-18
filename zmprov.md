@@ -34,7 +34,7 @@
 - [getDistributionListmembership / gdlm](#getdistributionlistmembership--gdlm)
 - [getDistributionList / gdl](#getdistributionlist--gdl)
 - [modifyDistributionList / mdl](#modifydistributionlist--mdl)
-- [zmprov deleteDistributionList / zmprov ddl](#zmprov-deletedistributionlist--zmprov-ddl)
+- [deleteDistributionList / ddl](#deletedistributionlist--ddl)
 - [zmprov addDistributionListAlias / zmprov adla](#zmprov-adddistributionlistalias--zmprov-adla)
 - [zmprov removeDistributionListAlias / zmprov rdla](#zmprov-removedistributionlistalias--zmprov-rdla)
 - [zmprov renameDistributionList / zmprov rdl](#zmprov-renamedistributionlist--zmprov-rdl)
@@ -512,7 +512,7 @@ zmprov mdl equipe.financeiro@dominio.com.br displayName "Equipe Financeiro"
 
 ---
 
-#### zmprov deleteDistributionList / zmprov ddl
+#### deleteDistributionList / ddl
 
 Deleta uma lista de distribuição.
 
