@@ -27,7 +27,7 @@
 - [removeAccountAlias / raa](#removeaccountalias--raa)
 - [setPassword / sp](#setpassword--sp)
 - [Comandos de provisionamento de LISTAS DE DISTRIBUIÇÃO](#comandos-de-provisionamento-de-listas-de-distribuição)
-- [zmprov createDistributionList / zmprov cdl](#zmprov-createdistributionlist--zmprov-cdl)
+- [createDistributionList / cdl](#createdistributionlist--cdl)
 - [zmprov addDistributionListMember / zmprov adlm](#zmprov-adddistributionlistmember--zmprov-adlm)
 - [zmprov removeDistributionListMember / zmprov rdlm](#zmprov-removedistributionlistmember--zmprov-rdlm)
 - [zmprov getAlldistributionLists / zmprov gadl](#zmprov-getalldistributionlists--zmprov-gadl)
@@ -385,7 +385,7 @@ Comandos que são usados para criação, configuração, etc das listas de distr
 
 ---
 
-#### zmprov createDistributionList / zmprov cdl
+#### createDistributionList / cdl
 
 Cria uma lista de distribuição.
 
