@@ -35,7 +35,7 @@
 - [getDistributionList / gdl](#getdistributionlist--gdl)
 - [modifyDistributionList / mdl](#modifydistributionlist--mdl)
 - [deleteDistributionList / ddl](#deletedistributionlist--ddl)
-- [zmprov addDistributionListAlias / zmprov adla](#zmprov-adddistributionlistalias--zmprov-adla)
+- [addDistributionListAlias / adla](#adddistributionlistalias--adla)
 - [zmprov removeDistributionListAlias / zmprov rdla](#zmprov-removedistributionlistalias--zmprov-rdla)
 - [zmprov renameDistributionList / zmprov rdl](#zmprov-renamedistributionlist--zmprov-rdl)
 - [Comandos de provisionamento de COMPARTILHAMENTO](#)
@@ -528,7 +528,7 @@ zmprov ddl equipe.financeiro@dominio.com.br
 
 ---
 
-#### zmprov addDistributionListAlias / zmprov adla
+#### addDistributionListAlias / adla
 
 Adiciona um apelido(alias) para uma lista de distribuição.
 
