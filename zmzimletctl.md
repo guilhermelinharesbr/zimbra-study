@@ -5,7 +5,8 @@
 
 - [Definição](#definição)
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
-
+- [listZimlets](#listzimlets)
+- [](#)
 
 ---
 
@@ -22,16 +23,14 @@ Os zimlets são add-ons ou extensões do Zimbra que adicionam novas funcionalida
 
 ---
 
-#### 
+#### listZimlets
 
-
+Mostra todos os zimlets instalados, com o status de cada um (enabled, disabled, etc.).
 
 Ex:
 ```bash
 su zimbra
-
-ou 
-
+zmzimletctl listZimlets
 ```
 
 ---
