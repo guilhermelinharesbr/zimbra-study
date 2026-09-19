@@ -21,7 +21,7 @@
 
 ---
 
-#### 
+#### status
 
 Verifica o estado do daemon do Policyd.
 
