@@ -37,7 +37,7 @@
 - [deleteDistributionList / ddl](#deletedistributionlist--ddl)
 - [addDistributionListAlias / adla](#adddistributionlistalias--adla)
 - [removeDistributionListAlias / rdla](#removedistributionlistalias--rdla)
-- [zmprov renameDistributionList / zmprov rdl](#zmprov-renamedistributionlist--zmprov-rdl)
+- [renameDistributionList / rdl](#renamedistributionlist--rdl)
 - [Comandos de provisionamento de COMPARTILHAMENTO](#)
 - [getShareInfo / gsi](#getshareinfo--gsi)
 - []()
@@ -560,7 +560,7 @@ zmprov rdla equipe.financeiro@dominio.com.br colaboradores.financeiro@dominio.co
 
 ---
 
-#### zmprov renameDistributionList / zmprov rdl
+#### renameDistributionList / rdl
 
 Renomeia uma lista de distribuição.
 
