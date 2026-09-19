@@ -36,7 +36,7 @@
 - [modifyDistributionList / mdl](#modifydistributionlist--mdl)
 - [deleteDistributionList / ddl](#deletedistributionlist--ddl)
 - [addDistributionListAlias / adla](#adddistributionlistalias--adla)
-- [zmprov removeDistributionListAlias / zmprov rdla](#zmprov-removedistributionlistalias--zmprov-rdla)
+- [removeDistributionListAlias / rdla](#removedistributionlistalias--rdla)
 - [zmprov renameDistributionList / zmprov rdl](#zmprov-renamedistributionlist--zmprov-rdl)
 - [Comandos de provisionamento de COMPARTILHAMENTO](#)
 - [getShareInfo / gsi](#getshareinfo--gsi)
@@ -544,7 +544,7 @@ zmprov adla equipe.financeiro@dominio.com.br colaboradores.financeiro@dominio.co
 
 ---
 
-#### zmprov removeDistributionListAlias / zmprov rdla
+#### removeDistributionListAlias / rdla
 
 Remove um apelido(alias) para uma lista de distribuição.
 
