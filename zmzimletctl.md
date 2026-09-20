@@ -21,14 +21,14 @@
 
 ---
 
-#### 
+#### listZimlets
 
-
+Mostra todos os zimlets instalados, com o status de cada um (enabled, disabled, etc.), além de dizer os zimlets disponíveis por COS.
 
 Ex:
 ```bash
 su zimbra
-
+zmzimletctl listZimlets
 ```
 
 ---
