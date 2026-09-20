@@ -5,7 +5,8 @@
 
 - [Definição](#definição)
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
-- [](#)
+- [listZimlets](#listzimlets)
+- [listPriority](#listpriority)
 
 ---
 
@@ -33,4 +34,15 @@ zmzimletctl listZimlets
 
 ---
 
+#### listPriority
 
+
+Mostra as prioridades do zimlets (0 é alto, 9 é baixo).
+
+Ex:
+```bash
+su zimbra
+zmzimletctl listPriority
+```
+
+---
