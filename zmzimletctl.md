@@ -12,7 +12,8 @@
 
 #### Definição
 
-
+O **zmzimletctl** é a ferramenta de linha de comando no Zimbra utilizada para gerenciar Zimlets no servidor.
+Os **zimlets** são add-ons ou extensões do Zimbra que adicionam novas funcionalidades e integrações na interface web (como integrações com videoconferência, anexos do Nextcloud, temas, integrações de chat, etc.).
 
 ---
 
@@ -35,7 +36,6 @@ zmzimletctl listZimlets
 ---
 
 #### listPriority
-
 
 Mostra as prioridades do zimlets (0 é alto, 9 é baixo).
 
