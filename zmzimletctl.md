@@ -5,6 +5,8 @@
 
 - [Definição](#definição)
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
+- [acl](#acl)
+- [listAcls](#listacls)
 - [listZimlets](#listzimlets)
 - [listPriority](#listpriority)
 
@@ -20,6 +22,27 @@ Os **Zimlets** são add-ons ou extensões do Zimbra que adicionam novas funciona
 #### Fonte de Pesquisa
 
 [zmzimletctl wiki](https://wiki.zimbra.com/wiki/CLI_zmzimletctl "Comando zmzimletctl na Wiki do Zimbra")
+
+
+--- 
+
+#### acl
+
+Muda a ACL para o Zimlet em uma COS, podendo forncer permissão ou remover.
+
+Syntax: {zmzimletctl acl} {zimlet} {cos1} grant|deny 
+
+Ex. colocando a permissão do zimlet com_zimbra_ymemoticons na COS de nome default:
+```bash
+su zimbra
+zmzimletctl acl com_zimbra_ymemoticons default grant
+```
+
+Ex2. negando a permissão do zimlet com_zimbra_ymemoticons na COS de nome default:
+```bash
+su zimbra
+zmzimletctl acl com_zimbra_ymemoticons default deny
+```
 
 ---
 
