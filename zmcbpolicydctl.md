@@ -1,11 +1,11 @@
-# zmzimletctl
+# zmcbpolicydctl
 
 
 ### Sumário
 
 - [Definição](#definição)
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
-- [](#)
+- [status](#status)
 
 ---
 
@@ -17,18 +17,18 @@
 
 #### Fonte de Pesquisa
 
-[zmzimletctl wiki](https://wiki.zimbra.com/wiki/CLI_zmzimletctl "Comando zmzimletctl na Wiki do Zimbra")
+[zmcbpolicydctl wiki](https://wiki.zimbra.com/wiki/CBPolicyD_Management "Comando zmcbpolicydctl na Wiki do Zimbra")
 
 ---
 
-#### 
+#### status
 
-
+Verifica o estado do daemon do Policyd.
 
 Ex:
 ```bash
 su zimbra
-
+zmcbpolicydctl status
 ```
 
 ---
