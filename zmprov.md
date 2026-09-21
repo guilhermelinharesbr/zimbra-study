@@ -38,12 +38,11 @@
 - [addDistributionListAlias / adla](#adddistributionlistalias--adla)
 - [zmprov removeDistributionListAlias / zmprov rdla](#zmprov-removedistributionlistalias--zmprov-rdla)
 - [zmprov renameDistributionList / zmprov rdl](#zmprov-renamedistributionlist--zmprov-rdl)
-- [Comandos para MAILBOX](#)
+- [Comandos para MAILBOX](#comandos-para-mailbox)
+- [getMailboxInfo / gmi](#getmailboxinfo--gmi)
+- [getQuotaUsage / gqu](#getquotausage--gqu)
 - [Comandos de provisionamento de COMPARTILHAMENTO](#comandos-de-provisionamento-de-compartilhamento)
 - [getShareInfo / gsi](#getshareinfo--gsi)
-- []()
-- []()
-
 
 ---
 
@@ -582,7 +581,6 @@ zmprov rdl equipe.financeiro@dominio.com.br financeiro@dominio.com.br
 
 ---
 
-
 #### getMailboxInfo / gmi
 
 Mostra o id da mailbox e quantidade da cota que ela está usando.
@@ -602,6 +600,27 @@ quotaUsed: 6781890506
 ```
 
 Obs: O valor da cota usada acima é por volta de 6,7GB.
+
+---
+
+#### getQuotaUsage / gqu
+
+Mostra a cota da conta e o quanto já usou. O primeiro número indica a cota e om segundo número o quanto usou. Se o primeiro número for um 0 significa que a conta não possui uma cota. O valores são em bytes. Então 6781890506 vale 6,7GB.
+
+Syntax: zmprov gqu {server name}
+
+```bash
+zmprov getQuotaUsage servername.com.br
+ou
+zmprov gqu servername.com.br
+```
+
+Saída:
+```
+guilherme.linhares@dominio.com.br 0 6781890506
+eduardo.linhares@dominio.com.br 0 81460
+financeiro@dominio.com.br 0 3710169045
+```
 
 ---
 
