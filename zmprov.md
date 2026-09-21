@@ -36,9 +36,10 @@
 - [modifyDistributionList / mdl](#modifydistributionlist--mdl)
 - [deleteDistributionList / ddl](#deletedistributionlist--ddl)
 - [addDistributionListAlias / adla](#adddistributionlistalias--adla)
-- [removeDistributionListAlias / rdla](#removedistributionlistalias--rdla)
-- [renameDistributionList / rdl](#renamedistributionlist--rdl)
-- [Comandos de provisionamento de COMPARTILHAMENTO](#)
+- [zmprov removeDistributionListAlias / zmprov rdla](#zmprov-removedistributionlistalias--zmprov-rdla)
+- [zmprov renameDistributionList / zmprov rdl](#zmprov-renamedistributionlist--zmprov-rdl)
+- [Comandos para MAILBOX](#)
+- [Comandos de provisionamento de COMPARTILHAMENTO](#comandos-de-provisionamento-de-compartilhamento)
 - [getShareInfo / gsi](#getshareinfo--gsi)
 - []()
 - []()
@@ -544,7 +545,7 @@ zmprov adla equipe.financeiro@dominio.com.br colaboradores.financeiro@dominio.co
 
 ---
 
-#### removeDistributionListAlias / rdla
+#### zmprov removeDistributionListAlias / zmprov rdla
 
 Remove um apelido(alias) para uma lista de distribuição.
 
@@ -560,7 +561,7 @@ zmprov rdla equipe.financeiro@dominio.com.br colaboradores.financeiro@dominio.co
 
 ---
 
-#### renameDistributionList / rdl
+#### zmprov renameDistributionList / zmprov rdl
 
 Renomeia uma lista de distribuição.
 
@@ -573,6 +574,34 @@ zmprov renameDistributionList equipe.financeiro@dominio.com.br financeiro@domini
 ou
 zmprov rdl equipe.financeiro@dominio.com.br financeiro@dominio.com.br
 ```
+
+---
+
+### Comandos para MAILBOX
+
+
+---
+
+
+#### getMailboxInfo / gmi
+
+Mostra o id da mailbox e quantidade da cota que ela está usando.
+
+Syntax: zmprov gmi 	{account}
+
+```bash
+zmprov getMailboxInfo guilherme.linhares@dominio.com.br
+ou
+zmprov gmi guilherme.linhares@dominio.com.br
+```
+
+Saída:
+```
+mailboxId: 7
+quotaUsed: 6781890506
+```
+
+Obs: O valor da cota usada acima é por volta de 6,7GB.
 
 ---
 
