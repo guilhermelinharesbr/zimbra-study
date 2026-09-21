@@ -5,6 +5,8 @@
 
 - [Definição](#definição)
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
+- [enable](#enable)
+- [disable](#)
 - [acl](#acl)
 - [listAcls](#listacls)
 - [listZimlets](#listzimlets)
@@ -25,6 +27,20 @@ Os **Zimlets** são add-ons ou extensões do Zimbra que adicionam novas funciona
 
 
 --- 
+
+#### enable
+
+Habilita um zimlet.
+
+Syntax: zmzimletctl enable {zimlet}
+
+Ex:
+```bash
+su zimbra
+zmzimletctl enable com_zimbra_ymemoticons
+```
+
+---
 
 #### acl
 
