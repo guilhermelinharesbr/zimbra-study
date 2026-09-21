@@ -11,6 +11,7 @@
 - [listAcls](#listacls)
 - [listZimlets](#listzimlets)
 - [listPriority](#listpriority)
+- [setPriority](#setpriority)
 
 ---
 
@@ -116,5 +117,72 @@ Ex:
 su zimbra
 zmzimletctl listPriority
 ```
+
+Saída: 
+```
+Pri	Zimlet
+0	com_zimbra_adminversioncheck
+1	com_zimbra_attachcontacts
+2	com_zimbra_attachmail
+3	com_zimbra_bulkprovision
+4	com_zimbra_cert_manager
+5	com_zimbra_date
+6	com_zimbra_email
+7	com_zimbra_gotourl
+8	com_zimbra_mailarchive
+9	com_zimbra_phone
+10	com_zimbra_proxy_config
+11	com_zimbra_srchhighlighter
+12	com_zimbra_tooltip
+13	com_zimbra_url
+14	com_zimbra_viewmail
+15	com_zimbra_webex
+16	com_zimbra_ymemoticons
+17	com_btactic_twofactorauth_admin
+```
+
+---
+
+#### setPriority
+
+Configura as prioridades do zimlets (0 é alto, 9 é baixo).
+
+Ex. foi verificado que a prioridade do zimlet com_zimbra_ymemoticons estava 16, e foi mudado para 14:
+
+```bash
+su zimbra
+zmzimletctl listPriority
+```
+
+Saída: 
+```
+Pri	Zimlet
+0	com_zimbra_adminversioncheck
+...
+13	com_zimbra_url
+14	com_zimbra_viewmail
+15	com_zimbra_webex
+16	com_zimbra_ymemoticons
+17	com_btactic_twofactorauth_admin
+```
+
+```bash
+zmzimletctl setPriority com_zimbra_ymemoticons 14
+zmzimletctl listPriority
+```
+
+Saída: 
+```
+Pri	Zimlet
+0	com_zimbra_adminversioncheck
+...
+13	com_zimbra_url
+14	com_zimbra_ymemoticons
+15	com_zimbra_viewmail
+16	com_zimbra_webex
+17	com_btactic_twofactorauth_admin
+```
+
+Obs: é possível observar que o zimlet com_zimbra_ymemoticons tinha a prioridade 16 e agora tem a prioridade 14, vale observar que ao aumentar a prioridade deste zimlets os outros próximo a ele reduziram a prioridade, como por exemplo o com_zimbra_viewmail saiu de 14 para 15.
 
 ---
