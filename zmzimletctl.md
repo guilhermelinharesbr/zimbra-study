@@ -6,7 +6,7 @@
 - [Definição](#definição)
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
 - [enable](#enable)
-- [disable](#)
+- [disable](#disable)
 - [acl](#acl)
 - [listAcls](#listacls)
 - [listZimlets](#listzimlets)
@@ -38,6 +38,20 @@ Ex:
 ```bash
 su zimbra
 zmzimletctl enable com_zimbra_ymemoticons
+```
+
+---
+
+#### disable
+
+Desabilita um zimlet.
+
+Syntax: zmzimletctl disable {zimlet}
+
+Ex:
+```bash
+su zimbra
+zmzimletctl disable com_zimbra_ymemoticons
 ```
 
 ---
