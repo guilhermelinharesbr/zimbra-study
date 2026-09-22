@@ -41,6 +41,7 @@
 - [Comandos para MAILBOX](#comandos-para-mailbox)
 - [getMailboxInfo / gmi](#getmailboxinfo--gmi)
 - [getQuotaUsage / gqu](#getquotausage--gqu)
+- [Comandos para PESQUISA](#comandos-para-pesquisa)
 - [Comandos de provisionamento de COMPARTILHAMENTO](#comandos-de-provisionamento-de-compartilhamento)
 - [getShareInfo / gsi](#getshareinfo--gsi)
 
@@ -621,6 +622,17 @@ guilherme.linhares@dominio.com.br 0 6781890506
 eduardo.linhares@dominio.com.br 0 81460
 financeiro@dominio.com.br 0 3710169045
 ```
+
+---
+
+### Comandos para PESQUISA
+
+
+
+---
+
+#### sdf
+
 
 ---
 
