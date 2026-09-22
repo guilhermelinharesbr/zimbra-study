@@ -47,7 +47,8 @@
 - [getShareInfo / gsi](#getshareinfo--gsi)
 - [Comandos de provisionamento DIVERSOS](#comandos-de-provisionamento-diversos)
 - [describe / desc](#describe--desc)
-- [Comandos específicos para o proxy IMAP/POP](#)
+- [Comandos específicos para o proxy IMAP/POP](#comandos-específicos-para-o-proxy-imappop)
+- [getAllMemcachedServers / gamcs](#getallmemcachedservers--gamcs)
 
 ---
 
@@ -714,6 +715,25 @@ zmprov desc server
 
 ---
 
-####
+#### getAllMemcachedServers / gamcs
+
+Utilizado para listar servidores memcached (para uso com nginix).
+
+Ex:
+```bash
+zmprov getAllMemcachedServers
+ou
+zmprov gamcs
+```
+
+Saída:
+
+```txt
+01vdmz.dominio.com.br:11211 01v.dominio.com.br:11211
+```
+
+Obs: Foram listados acima os dois servidores Memcached configurados em um Zimbra. 
+
+Obs2: O **Memcached** é um sistema de cache em memória distribuído, usado pelo Zimbra para acelerar operações repetitivas, guarda temporariamente dados de sessão, resultados de consultas frequentes, informações de proxy, etc., evitando bater no LDAP/banco de dados toda vez. 
 
 ---
