@@ -45,6 +45,7 @@
 - [searchGAL / sg](#searchgal--sg)
 - [Comandos de provisionamento de COMPARTILHAMENTO](#comandos-de-provisionamento-de-compartilhamento)
 - [getShareInfo / gsi](#getshareinfo--gsi)
+- [Comandos de provisionamento DIVERSOS](#comandos-de-provisionamento-diversos)
 
 ---
 
@@ -663,5 +664,16 @@ zmprov getShareInfo financeiro@dominio.com.br
 ou
 zmprov gsi financeiro@dominio.com.br
 ```
+
+---
+
+
+### Comandos de provisionamento DIVERSOS
+
+
+
+---
+
+#### 
 
 ---
