@@ -47,6 +47,7 @@
 - [getShareInfo / gsi](#getshareinfo--gsi)
 - [Comandos de provisionamento DIVERSOS](#comandos-de-provisionamento-diversos)
 - [describe / desc](#describe--desc)
+- [Comandos específicos para o proxy IMAP/POP](#)
 
 ---
 
@@ -706,5 +707,13 @@ zmprov describe server
 ou
 zmprov desc server
 ```
+
+---
+
+### Comandos específicos para o proxy IMAP/POP
+
+---
+
+####
 
 ---
