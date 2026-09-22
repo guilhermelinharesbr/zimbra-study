@@ -42,6 +42,7 @@
 - [getMailboxInfo / gmi](#getmailboxinfo--gmi)
 - [getQuotaUsage / gqu](#getquotausage--gqu)
 - [Comandos para PESQUISA](#comandos-para-pesquisa)
+- [searchGAL / sg](#searchgal--sg)
 - [Comandos de provisionamento de COMPARTILHAMENTO](#comandos-de-provisionamento-de-compartilhamento)
 - [getShareInfo / gsi](#getshareinfo--gsi)
 
@@ -631,8 +632,18 @@ financeiro@dominio.com.br 0 3710169045
 
 ---
 
-#### sdf
+#### searchGAL / sg
 
+Para pesquisar por usuários na GAL.
+
+Syntax: {domain} {name}
+
+Ex. pesquisa por todos os usuários do domínio dominio\.com.br que tenham como parte do nome a palavra "guilherme":
+```bash
+zmprov searchGAL dominio.com.br guilherme
+ou
+zmprov sg dominio.com.br guilherme
+```
 
 ---
 
