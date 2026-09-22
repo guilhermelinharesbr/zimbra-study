@@ -46,6 +46,7 @@
 - [Comandos de provisionamento de COMPARTILHAMENTO](#comandos-de-provisionamento-de-compartilhamento)
 - [getShareInfo / gsi](#getshareinfo--gsi)
 - [Comandos de provisionamento DIVERSOS](#comandos-de-provisionamento-diversos)
+- [describe / desc](#describe--desc)
 
 ---
 
@@ -674,6 +675,36 @@ zmprov gsi financeiro@dominio.com.br
 
 ---
 
-#### 
+#### describe / desc
+
+Mostra todos os nomes de atributos. Pode ser usado para ver os atributos das contas, domínios, COS, servidores, etc.
+
+Ex. para ver os atributos das contas:
+```bash
+zmprov describe account
+ou
+zmprov desc account
+```
+
+Ex2. para ver os atributos dos domínios:
+```bash
+zmprov describe domain
+ou
+zmprov desc domain
+```
+
+Ex3. para ver os atributos das COS:
+```bash
+zmprov describe cos
+ou
+zmprov desc cos
+```
+
+Ex4. para ver os atributos dos servidores:
+```bash
+zmprov describe server
+ou
+zmprov desc server
+```
 
 ---
