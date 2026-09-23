@@ -6,6 +6,7 @@
 - [Definição](#definição)
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
 - [--help / -h](#--help---h)
+- [--path / -p](#--path---p)
 - [--show / -s](#--show---s)
 
 ---
@@ -22,7 +23,7 @@ O **zmlocalconfig** é usado para definir ou obter a configuração local de um 
 
 ---
 
-### --help / -h
+#### --help / -h
 
 Exibe a ajuda para as opções de uso desta ferramenta.
 
@@ -31,6 +32,25 @@ Ex:
 zmlocalconfig --help
 ou
 zmlocalconfig -h
+```
+
+---
+
+#### --path / -p
+
+Mostra qual arquivo de configuração será usado. Geramente um arquivo XML.
+
+Ex:
+```bash
+zmlocalconfig --path
+ou
+zmlocalconfig -p
+```
+
+Saída:
+
+```txt
+/opt/zimbra/conf/localconfig.xml
 ```
 
 ---
