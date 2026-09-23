@@ -5,6 +5,7 @@
 
 - [Definição](#definição)
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
+- [--default / -d](#--default---d)
 - [--help / -h](#--help---h)
 - [--path / -p](#--path---p)
 - [--show / -s](#--show---s)
@@ -20,6 +21,19 @@ O **zmlocalconfig** é usado para definir ou obter a configuração local de um 
 #### Fonte de Pesquisa
 
 [zmlocalconfig wiki](https://wiki.zimbra.com/wiki/CLI_zmlocalconfig_(Local_Configuration) "Comando zmlocalconfig na Wiki do Zimbra")
+
+---
+
+#### --default / -d
+
+Exibi os valores padrão das configurações locais do Zimbra.
+
+Ex:
+```bash
+zmlocalconfig --default
+ou
+zmlocalconfig -d
+```
 
 ---
 
