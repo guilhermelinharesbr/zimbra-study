@@ -17,6 +17,7 @@
 - [modifyDomain / md](#modifydomain--md)
 - [Comandos de provisionamento de COS](#comandos-de-provisionamento-de-cos)
 - [createCos / cc](#createcos--cc)
+- [deleteCos / dc](#deletecos--dc)
 - [getCos / gc](#getcos--gc)
 - [getAllCos / gac](#getallcos--gac)
 - [renameCos / rc](#renamecos--rc)
@@ -222,13 +223,28 @@ Comandos que são usados para criação, configuração, etc das COS no Zimbra.
 
 Cria uma COS.
 
-Syntax: zmprov {name} [attribute1 value1 etc]
+Syntax: zmprov createCos {name} [attribute1 value1 etc]
 
 Ex.:
 ```bash
 zmprov createCos teste_cos
 ou 
 zmprov cc teste_cos
+```
+
+---
+
+#### deleteCos / dc
+
+Deleta uma COS.
+
+Syntax: zmprov deleteCos {name|id}
+
+Ex.:
+```bash
+zmprov deleteCos teste_cos
+ou 
+zmprov dc teste_cos
 ```
 
 ---
