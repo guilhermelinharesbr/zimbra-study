@@ -19,6 +19,7 @@
 - [createCos / cc](#createcos--cc)
 - [getCos / gc](#getcos--gc)
 - [getAllCos / gac](#getallcos--gac)
+- [renameCos / rc](#renamecos--rc)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
 - [addAccountAlias / aaa](#addaccountalias--aaa)
 - [checkPasswordStrength / cps](#checkpasswordstrength--cps)
@@ -266,6 +267,21 @@ zmprov gac -v
 ```
 
 Obs: Se usar o parâmetro `-v` aparecerá os parâmetros de todas as COS.
+
+---
+
+#### renameCos / rc
+
+Renomeia uma COS.
+
+Syntax: zmprov {name|id} {newName}
+
+Ex. Renomeia a COS de nome teste_cos para teste_cos2:
+```bash
+zmprov renameCos teste_cos teste_cos2
+ou 
+zmprov rc teste_cos teste_cos2
+```
 
 ---
 
