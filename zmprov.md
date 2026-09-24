@@ -16,6 +16,8 @@
 - [getAllDomains / gad](#getalldomains--gad)
 - [modifyDomain / md](#modifydomain--md)
 - [Comandos de provisionamento de COS](#comandos-de-provisionamento-de-cos)
+- [getCos / gc](#getcos--gc)
+- [getAllCos / gac](#getallcos--gac)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
 - [addAccountAlias / aaa](#addaccountalias--aaa)
 - [checkPasswordStrength / cps](#checkpasswordstrength--cps)
@@ -211,6 +213,21 @@ zmprov md empresa.com.br description "Empresa XYZ"
 ### Comandos de provisionamento de COS
 
 Comandos que são usados para criação, configuração, etc das COS no Zimbra. 
+
+---
+
+#### getCos / gc
+
+Lista os parâmetros de uma determinada COS.
+
+Syntax: zmprov getCos {name|id}
+
+Ex. lista os parâmetros da COS de nome default e da de nome default_persona:
+```bash
+zmprov getCos default
+ou 
+zmprov gc default_persona
+```
 
 ---
 
