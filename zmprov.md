@@ -16,6 +16,7 @@
 - [getAllDomains / gad](#getalldomains--gad)
 - [modifyDomain / md](#modifydomain--md)
 - [Comandos de provisionamento de COS](#comandos-de-provisionamento-de-cos)
+- [createCos / cc](#createcos--cc)
 - [getCos / gc](#getcos--gc)
 - [getAllCos / gac](#getallcos--gac)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
@@ -213,6 +214,21 @@ zmprov md empresa.com.br description "Empresa XYZ"
 ### Comandos de provisionamento de COS
 
 Comandos que são usados para criação, configuração, etc das COS no Zimbra. 
+
+---
+
+#### createCos / cc
+
+Cria uma COS.
+
+Syntax: zmprov {name} [attribute1 value1 etc]
+
+Ex.:
+```bash
+zmprov createCos teste_cos
+ou 
+zmprov cc teste_cos
+```
 
 ---
 
