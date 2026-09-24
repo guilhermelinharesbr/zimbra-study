@@ -214,6 +214,28 @@ Comandos que são usados para criação, configuração, etc das COS no Zimbra.
 
 ---
 
+#### getAllCos / gac
+
+Lista todas as COS.
+
+Ex:
+```bash
+zmprov getAllCos
+ou 
+zmprov gac
+```
+
+Ex2:
+```bash
+zmprov getAllCos -v
+ou 
+zmprov gac -v
+```
+
+Obs: Se usar o parâmetro `-v` aparecerá os parâmetros de todas as COS.
+
+---
+
 ### Comandos de provisionamento de CONTAS
 
 Comandos que são usados para criação, configuração, etc das contas no Zimbra. 
