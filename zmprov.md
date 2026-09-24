@@ -15,6 +15,7 @@
 - [getDomainInfo / gdi](#getdomaininfo--gdi)
 - [getAllDomains / gad](#getalldomains--gad)
 - [modifyDomain / md](#modifydomain--md)
+- [Comandos de provisionamento de COS](#comandos-de-provisionamento-de-cos)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
 - [addAccountAlias / aaa](#addaccountalias--aaa)
 - [checkPasswordStrength / cps](#checkpasswordstrength--cps)
@@ -204,6 +205,12 @@ zmprov modifyDomain empresa.com.br description "Empresa XYZ"
 ou
 zmprov md empresa.com.br description "Empresa XYZ"
 ```
+
+---
+
+### Comandos de provisionamento de COS
+
+Comandos que são usados para criação, configuração, etc das COS no Zimbra. 
 
 ---
 
