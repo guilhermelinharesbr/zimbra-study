@@ -9,6 +9,7 @@
 - [zmprov --help / zmprov -h](#zmprov---help--zmprov--h)
 - [Comandos de provisionamento de DOMÍNIO](#comandos-de-provisionamento-de-domínio)
 - [countAccount / cta](#countaccount--cta)
+- [createAliasDomain / cad](#createaliasdomain--cad)
 - [createDomain / cd](#createdomain--cd)
 - [deleteDomain / dd](#deletedomain--dd)
 - [getDomain / gd](#getdomain--gd)
@@ -107,6 +108,21 @@ Ex:
 zmprov countAccount dominio.com.br
 ou 
 zmprov cta dominio.com.br
+```
+
+---
+
+#### createAliasDomain / cad
+
+Cria um domínio inteiro como "espelho" de outro domínio já existente. Todas as contas do domínio principal passam a ser alcançáveis também pelo novo nome de domínio, sem duplicar contas, é uma única conta, dois endereços de email funcionando.
+
+Syntax: zmprov createAliasDomain {alias-domain-name} {local-domain-name|id} [attr1 value1 [attr2 value2...]]
+
+Ex:
+```bash
+zmprov createAliasDomain aliasdominio.com.br dominio.com.br
+ou 
+zmprov cad aliasdominio.com.br dominio.com.br
 ```
 
 ---
