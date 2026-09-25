@@ -16,6 +16,7 @@
 - [getAllDomains / gad](#getalldomains--gad)
 - [modifyDomain / md](#modifydomain--md)
 - [Comandos de provisionamento de COS](#comandos-de-provisionamento-de-cos)
+- [copyCos / cpc](#copycos--cpc)
 - [createCos / cc](#createcos--cc)
 - [deleteCos / dc](#deletecos--dc)
 - [getCos / gc](#getcos--gc)
@@ -216,6 +217,21 @@ zmprov md empresa.com.br description "Empresa XYZ"
 ### Comandos de provisionamento de COS
 
 Comandos que são usados para criação, configuração, etc das COS no Zimbra. 
+
+---
+
+#### copyCos / cpc
+
+Cria uma cópia de uma COS já existente, em vez de configurar uma COS nova do zero, atributo por atributo, este comando duplica uma que já tem as configurações certas e só ajusta o que for diferente.
+
+Syntax: {src-cos-name|id} {dest-cos-name}
+
+Ex. copia as configurações da COS de nome default e cria a de nome default_persona:
+```bash
+zmprov copyCos default default_persona
+ou 
+zmprov cpc default default_persona
+```
 
 ---
 
