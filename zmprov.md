@@ -15,6 +15,7 @@
 - [getDomainInfo / gdi](#getdomaininfo--gdi)
 - [getAllDomains / gad](#getalldomains--gad)
 - [modifyDomain / md](#modifydomain--md)
+- [renameDomain / rd](#renamedomain--rd)
 - [Comandos de provisionamento de COS](#comandos-de-provisionamento-de-cos)
 - [copyCos / cpc](#copycos--cpc)
 - [createCos / cc](#createcos--cc)
@@ -212,6 +213,25 @@ zmprov modifyDomain empresa.com.br description "Empresa XYZ"
 ou
 zmprov md empresa.com.br description "Empresa XYZ"
 ```
+
+---
+
+#### renameDomain / rd
+
+Troca o nome de um domínio inteiro.
+
+Syntax: zmprov --ldap renameDomain {domain|id} {newDomain}
+
+Obs: Renomear um domínio só pode ser usado com `zmrpov --ldap/-l`.
+
+Ex.:
+```bash
+zmprov --ldap renameDomain dominio.com.br dominio2.com.br
+ou
+zmprov -l renameDomain dominio.com.br dominio2.com.br
+```
+
+Obs: Este comando é pouco usado, é mais comum apenas criar um novo domínio.
 
 ---
 
