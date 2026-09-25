@@ -6,6 +6,7 @@
 - [Definição](#definição)
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
 - [--default / -d](#--default---d)
+- [--edit / -e](#--edit---e)
 - [--help / -h](#--help---h)
 - [--path / -p](#--path---p)
 - [--show / -s](#--show---s)
@@ -34,6 +35,27 @@ zmlocalconfig --default
 ou
 zmlocalconfig -d
 ```
+
+---
+
+
+
+#### --edit / -e
+
+Edita o arquivo de configuração, altere as chaves e os valores especificados. O argumento [args] está no formato chave=valor.
+
+Ex. verificando o valor da chave local chamada zimbra_mailbox_galsync_cache, alterando ela e conferindo novamente:
+```bash
+zmlocalconfig -s zimbra_mailbox_galsync_cache
+#Era 10000
+zmlocalconfig --edit zimbra_mailbox_galsync_cache=10100
+ou
+zmlocalconfig -e zimbra_mailbox_galsync_cache=10100
+zmlocalconfig -s zimbra_mailbox_galsync_cache
+# Ficou 10100
+```
+
+Obs: Após reiniciar a VM a configuração alterada via `zmlocalconfig -e` se mantém, além disso é mais seguro usar o comando zmlocalconfig do que editar diretamente o arquivo **/opt/zimbra/conf/localconfig.xml**, que é o local onde são salvas estas configurações locais.
 
 ---
 
