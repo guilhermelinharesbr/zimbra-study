@@ -21,6 +21,7 @@
 - [deleteCos / dc](#deletecos--dc)
 - [getCos / gc](#getcos--gc)
 - [getAllCos / gac](#getallcos--gac)
+- [modifyCos / mc](#modifycos--mc)
 - [renameCos / rc](#renamecos--rc)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
 - [addAccountAlias / aaa](#addaccountalias--aaa)
@@ -278,6 +279,13 @@ ou
 zmprov gc default_persona
 ```
 
+Ex2. mostra se estão haibiltados ou desabilitadas feautures de Agenda/Calendário e da de Tarefas: 
+```bash
+zmprov gc default zimbraFeatureCalendarEnabled zimbraFeatureTasksEnabled
+```
+
+Obs2: Este exemplo 2 é usado em conjunto com o exemplo da [modifyCos](#modifycos--mc) que tem informações mais abaixo neste artigo.
+
 ---
 
 #### getAllCos / gac
@@ -299,6 +307,23 @@ zmprov gac -v
 ```
 
 Obs: Se usar o parâmetro `-v` aparecerá os parâmetros de todas as COS.
+
+---
+
+#### modifyCos / mc
+
+Altera atributos de uma Classe de Serviço (COS) já existente.
+
+Syntax: zmprov {name|id} {newName}
+
+Ex. Desabilita o acesso à Agenda/Calendário para todas as contas da COS de nome default:
+```bash
+zmprov modifyCos default zimbraFeatureCalendarEnabled FALSE
+ou 
+zmprov mc default zimbraFeatureCalendarEnabled FALSE
+```
+
+Obs: Para conferir se as features estão habilitadas usar o comando [getCos](#getcos--gc), que tem um exemplo mais acima neste artigo.
 
 ---
 
