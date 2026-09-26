@@ -7,6 +7,7 @@
 - [--help](#--help)
 - [status](#status)
 - [restart](#restart)
+- [reload](#restart)
 - [start](#start)
 - [stop](#stop)
 
@@ -52,6 +53,17 @@ Reinicia o serviço do Apache HTTP.
 Ex:
 ```bash
 zmapachectl restart
+```
+
+---
+
+#### reload
+
+Recarrega o arquivo de configuração **/opt/zimbra/conf/httpd.conf** sem derrubar o serviço.
+
+Ex:
+```bash
+zmapachectl reload
 ```
 
 ---
