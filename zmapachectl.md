@@ -6,6 +6,7 @@
 - [Definição](#definição)
 - [--help](#--help)
 - [status](#status)
+- [start](#start)
 - [stop](#stop)
 
 
@@ -37,6 +38,17 @@ Verifica o estado de execução do Apache HTTP.
 
 ```bash
 zmapachectl status
+```
+
+---
+
+#### start
+
+Inicia o serviço do Apache HTTP.
+
+Ex:
+```bash
+zmapachectl start
 ```
 
 ---
