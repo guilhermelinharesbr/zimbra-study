@@ -6,6 +6,7 @@
 - [Definição](#definição)
 - [--help](#--help)
 - [status](#status)
+- [restart](#restart)
 - [start](#start)
 - [stop](#stop)
 
@@ -19,6 +20,8 @@ O **zmapachectl** controla o serviço Apache HTTP que roda dentro do Zimbra, usa
 Útil se o corretor ortográfico parar de responder no webmail (aquele sublinhado vermelho de erro de digitação que costuma aparecer ao escrever e-mails),reiniciar o Apache geralmente resolve.
 
 O Apache HTTP roda na porta **7780** e pode ser conferido com o comando `ss -ltpun | grep http`, e o zmapachectl controla extamente esse serviço e esta porta.
+
+Todos os comandos deste artigo precisam ser executados com o usuário zimbra, comumente usando o comando `su zimbra`.
 
 ---
 
@@ -38,6 +41,17 @@ Verifica o estado de execução do Apache HTTP.
 
 ```bash
 zmapachectl status
+```
+
+---
+
+#### restart
+
+Reinicia o serviço do Apache HTTP.
+
+Ex:
+```bash
+zmapachectl restart
 ```
 
 ---
