@@ -6,6 +6,7 @@
 - [Definição](#definição)
 - [--help](#--help)
 - [status](#status)
+- [stop](#stop)
 
 
 ---
@@ -36,6 +37,24 @@ Verifica o estado de execução do Apache HTTP.
 
 ```bash
 zmapachectl status
+```
+
+---
+
+#### stop
+
+Para o serviço do Apache HTTP.
+
+Ex:
+```bash
+zmapachectl stop
+```
+
+Obs: Se for observar os serviços que estão rodando via `zmcontrol status` será visto que o serviço **spell** está parado, essa informação é vista da seguinte maneira:
+
+```txt
+spell      Stopped
+           zmapachectl is not running
 ```
 
 ---
