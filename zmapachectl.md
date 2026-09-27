@@ -8,6 +8,7 @@
 - [status](#status)
 - [restart](#restart)
 - [reload](#restart)
+- [graceful](#graceful)
 - [start](#start)
 - [stop](#stop)
 
@@ -23,6 +24,15 @@ O **zmapachectl** controla o serviço Apache HTTP que roda dentro do Zimbra, usa
 O Apache HTTP roda na porta **7780** e pode ser conferido com o comando `ss -ltpun | grep http`, e o zmapachectl controla extamente esse serviço e esta porta.
 
 Todos os comandos deste artigo precisam ser executados com o usuário zimbra, comumente usando o comando `su zimbra`.
+
+Para ver qual ver o conteúdo do **script** que é executado pelo comando zmapachectl:
+
+```bash
+cat $(which zmapachectl)
+ou
+which zmapachectl
+cat /opt/zimbra/bin/zmapachectl
+```
 
 ---
 
@@ -64,6 +74,17 @@ Recarrega o arquivo de configuração **/opt/zimbra/conf/httpd.conf** sem derrub
 Ex:
 ```bash
 zmapachectl reload
+```
+
+---
+
+#### graceful
+
+Este comando tem exatamente a mesma função do _zmapachectl reload_ mudando apenas o nome, ou seja eles ambos chamam a mesma função no script /opt/zimbra/bin/zmapachectl que é recarrega o arquivo de configuração **/opt/zimbra/conf/httpd.conf** sem derrubar o serviço. 
+
+Ex:
+```bash
+zmapachectl graceful
 ```
 
 ---
