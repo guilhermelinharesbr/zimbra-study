@@ -7,7 +7,7 @@
 - [--help](#--help)
 - [status](#status)
 - [restart](#restart)
-- [reload](#restart)
+- [reload](#reload)
 - [graceful](#graceful)
 - [start](#start)
 - [stop](#stop)
