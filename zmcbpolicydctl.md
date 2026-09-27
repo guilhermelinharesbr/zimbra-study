@@ -5,6 +5,7 @@
 
 - [Definição](#definição)
 - [Fonte de Pesquisa](#fonte-de-pesquisa)
+- [--help](#--help)
 - [status](#status)
 
 ---
@@ -18,6 +19,16 @@
 #### Fonte de Pesquisa
 
 [zmcbpolicydctl wiki](https://wiki.zimbra.com/wiki/CBPolicyD_Management "Comando zmcbpolicydctl na Wiki do Zimbra")
+
+---
+
+#### --help
+
+Usado para mostar as opções do comando.
+
+```bash
+zmcbpolicydctl --help
+```
 
 ---
 
