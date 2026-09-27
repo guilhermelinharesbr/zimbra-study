@@ -8,6 +8,7 @@
 - [--help](#--help)
 - [status](#status)
 - [restart](#restart)
+- [start](#start)
 
 ---
 
@@ -52,6 +53,17 @@ Reinicia o serviço do PolicyD/cbpolicyd.
 Ex:
 ```bash
 zmcbpolicydctl restart
+```
+
+---
+
+#### start
+
+Inicia o serviço do PolicyD/cbpolicyd.
+
+Ex:
+```bash
+zmcbpolicydctl start
 ```
 
 ---
