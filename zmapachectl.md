@@ -12,7 +12,6 @@
 - [start](#start)
 - [stop](#stop)
 
-
 ---
 
 #### Definição
