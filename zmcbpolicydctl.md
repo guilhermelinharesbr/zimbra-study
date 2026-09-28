@@ -8,6 +8,7 @@
 - [--help](#--help)
 - [status](#status)
 - [restart](#restart)
+- [reload](#reload)
 - [start](#start)
 - [stop](#stop)
 
@@ -55,6 +56,21 @@ Ex:
 ```bash
 zmcbpolicydctl restart
 ```
+
+Obs: Os comandos `zmcbpolicydctl restart` e `zmcbpolicydctl reload` tem a mesma função sem nenhuma diferença, ambos param e sobem o serviço no mesmo comando.
+
+---
+
+#### reload
+
+Para e renicia o serviço do cbpolicyd como pode ser visto no arquivo **/opt/zimbra/bin/zmcbpolicydctl**.
+
+Ex:
+```bash
+zmcbpolicydctl reload
+```
+
+Obs: Os comandos `zmcbpolicydctl restart` e `zmcbpolicydctl reload` tem a mesma função sem nenhuma diferença, ambos param e sobem o serviço no mesmo comando.
 
 ---
 
