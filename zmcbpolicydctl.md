@@ -11,6 +11,7 @@
 - [reload](#reload)
 - [start](#start)
 - [stop](#stop)
+- [kill](#kill)
 
 ---
 
@@ -93,5 +94,20 @@ Ex:
 ```bash
 zmcbpolicydctl stop
 ```
+
+Obs: A diferença do `kill` para o `stop` é que o _kill_ para o serviço de maneira mais abrupta, sem nenhuma mensagem na tela, já o _stop_, mostra mensagens em tela.
+
+---
+
+#### kill
+
+Para o serviço do PolicyD/cbpolicyd.
+
+Ex:
+```bash
+zmcbpolicydctl kill
+```
+
+Obs: A diferença do `kill` para o `stop` é que o _kill_ para o serviço de maneira mais abrupta, sem nenhuma mensagem na tela, já o _stop_, mostra mensagens em tela.
 
 ---
