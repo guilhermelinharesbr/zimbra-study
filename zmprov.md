@@ -37,6 +37,7 @@
 - [removeAccountAlias / raa](#removeaccountalias--raa)
 - [setPassword / sp](#setpassword--sp)
 - [Comandos de provisionamento de CONFIGURAÇÃO](#comandos-de-provisionamento-de-configuração)
+- [getConfig  / gcf](#getconfig---gcf)
 - [Comandos de provisionamento de LISTAS DE DISTRIBUIÇÃO](#comandos-de-provisionamento-de-listas-de-distribuição)
 - [createDistributionList / cdl](#createdistributionlist--cdl)
 - [addDistributionListMember / adlm](#adddistributionlistmember--adlm)
@@ -560,6 +561,19 @@ zmprov sp guilherme.linhares@dominio.com.br senha%123
 #### Comandos de provisionamento de CONFIGURAÇÃO
 
 Comandos que são usados para configuração do zimbra. 
+
+---
+
+#### getConfig  / gcf
+
+Mostra a configuração de um detrminado parâmetro do Zimbra.
+
+Ex. mostra a configuração do parâmetro zimbraHttpThrottleSafeIPs, que é usado para consultar a lista de endereços IP (ou sub-redes) que estão isentos de controle de limite de taxa (throttling) nas requisições HTTP/SOAP do Zimbra:
+```bash
+zmprov getConfig zimbraHttpThrottleSafeIPs
+ou
+zmprov gcf zimbraHttpThrottleSafeIPs
+```
 
 ---
 
