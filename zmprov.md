@@ -55,6 +55,7 @@
 - [Comandos para MAILBOX](#comandos-para-mailbox)
     - [getMailboxInfo / gmi](#getmailboxinfo--gmi)
     - [getQuotaUsage / gqu](#getquotausage--gqu)
+    - [selectMailbox / sm](#selectmailbox--sm)
 - [Comandos para PESQUISA](#comandos-para-pesquisa)
     - [searchGAL / sg](#searchgal--sg)
 - [Comandos de provisionamento de COMPARTILHAMENTO](#comandos-de-provisionamento-de-compartilhamento)
@@ -864,6 +865,24 @@ Saída:
 guilherme.linhares@dominio.com.br 0 6781890506
 eduardo.linhares@dominio.com.br 0 81460
 financeiro@dominio.com.br 0 3710169045
+```
+
+---
+
+#### selectMailbox / sm
+
+O comando zmprov selectMailbox (frequentemente usado em conjunto com o subcomando mta ou para interagir com o contexto de contas/mailboxes no modo interativo do zmprov) é utilizado para direcionar operações para uma caixa postal específica.
+
+Geralmente, o selectMailbox é mais utilizado quando você entra no modo interativo do zmprov para executar vários comandos consecutivos para uma mesma conta sem precisar redigitar o e-mail em cada linha.
+
+Ex. entrado no modo interativo do comando zmprov e verificando a cota de uma conta:
+```bash
+zmprov # Entra no modo interativo
+selectMailbox guilherme.linhares@dominio.com.br
+ou
+sm guilherme.linhares@dominio.com.br
+# Neste momento são exibidas informações da cota, quantidade de mensagens que o usuário possui e quantas não lidas
+quit # Sai do modo interativo
 ```
 
 ---
