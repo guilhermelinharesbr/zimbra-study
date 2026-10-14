@@ -39,6 +39,7 @@
 - [Comandos de provisionamento de CONFIGURAÇÃO](#comandos-de-provisionamento-de-configuração)
     - [getAllConfig / gacf](#getallconfig--gacf)
     - [getConfig / gcf](#getconfig--gcf)
+    - [modifyConfig / mcf](#modifyconfig--mcf)
 - [Comandos de provisionamento de LISTAS DE DISTRIBUIÇÃO](#comandos-de-provisionamento-de-listas-de-distribuição)
     - [createDistributionList / cdl](#createdistributionlist--cdl)
     - [addDistributionListMember / adlm](#adddistributionlistmember--adlm)
@@ -590,11 +591,34 @@ zmprov gacf | grep zimbraHttpThrottleSafeIPs
 
 Mostra a configuração de um detrminado parâmetro do Zimbra.
 
-Ex. mostra a configuração do parâmetro zimbraHttpThrottleSafeIPs, que é usado para consultar a lista de endereços IP (ou sub-redes) que estão isentos de controle de limite de taxa (throttling) nas requisições HTTP/SOAP do Zimbra:
+Ex. _mostra_ a configuração do parâmetro zimbraHttpThrottleSafeIPs, que é usado para consultar a lista de endereços IP (ou sub-redes) que estão isentos de controle de limite de taxa (throttling) nas requisições HTTP/SOAP do Zimbra:
 ```bash
 zmprov getConfig zimbraHttpThrottleSafeIPs
 ou
 zmprov gcf zimbraHttpThrottleSafeIPs
+```
+
+---
+
+#### modifyConfig / mcf
+
+Modifica a configuração de um detrminado parâmetro do Zimbra.
+Modifica as configurações LDAP.
+
+Syntax: attr1 value1
+
+Ex. _modifica_ a configuração do parâmetro zimbraHttpThrottleSafeIPs, no caso **adicionado** este IP:
+```bash
+zmprov modifyConfig +zimbraHttpThrottleSafeIPs 192.168.1.40/32
+ou
+zmprov mcf +zimbraHttpThrottleSafeIPs 192.168.1.40/32
+```
+
+Ex. _modifica_ a configuração do parâmetro zimbraHttpThrottleSafeIPs, no caso **removendo** este IP:
+```bash
+zmprov modifyConfig -zimbraHttpThrottleSafeIPs 192.168.1.40/32
+ou
+zmprov mcf -zimbraHttpThrottleSafeIPs 192.168.1.40/32
 ```
 
 ---
