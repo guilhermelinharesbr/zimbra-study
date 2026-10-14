@@ -37,19 +37,20 @@
 - [removeAccountAlias / raa](#removeaccountalias--raa)
 - [setPassword / sp](#setpassword--sp)
 - [Comandos de provisionamento de CONFIGURAÇÃO](#comandos-de-provisionamento-de-configuração)
-- [getConfig  / gcf](#getconfig---gcf)
+    - [getAllConfig / gacf](#getallconfig--gacf)
+    - [getConfig / gcf](#getconfig--gcf)
 - [Comandos de provisionamento de LISTAS DE DISTRIBUIÇÃO](#comandos-de-provisionamento-de-listas-de-distribuição)
-- [createDistributionList / cdl](#createdistributionlist--cdl)
-- [addDistributionListMember / adlm](#adddistributionlistmember--adlm)
-- [removeDistributionListMember / rdlm](#removedistributionlistmember--rdlm)
-- [getAlldistributionLists / gadl](#getalldistributionlists--gadl)
-- [getDistributionListmembership / gdlm](#getdistributionlistmembership--gdlm)
-- [getDistributionList / gdl](#getdistributionlist--gdl)
-- [modifyDistributionList / mdl](#modifydistributionlist--mdl)
-- [deleteDistributionList / ddl](#deletedistributionlist--ddl)
-- [addDistributionListAlias / adla](#adddistributionlistalias--adla)
-- [zmprov removeDistributionListAlias / zmprov rdla](#zmprov-removedistributionlistalias--zmprov-rdla)
-- [zmprov renameDistributionList / zmprov rdl](#zmprov-renamedistributionlist--zmprov-rdl)
+    - [createDistributionList / cdl](#createdistributionlist--cdl)
+    - [addDistributionListMember / adlm](#adddistributionlistmember--adlm)
+    - [removeDistributionListMember / rdlm](#removedistributionlistmember--rdlm)
+    - [getAlldistributionLists / gadl](#getalldistributionlists--gadl)
+    - [getDistributionListmembership / gdlm](#getdistributionlistmembership--gdlm)
+    - [getDistributionList / gdl](#getdistributionlist--gdl)
+    - [modifyDistributionList / mdl](#modifydistributionlist--mdl)
+    - [deleteDistributionList / ddl](#deletedistributionlist--ddl)
+    - [addDistributionListAlias / adla](#adddistributionlistalias--adla)
+    - [zmprov removeDistributionListAlias / zmprov rdla](#zmprov-removedistributionlistalias--zmprov-rdla)
+    - [zmprov renameDistributionList / zmprov rdl](#zmprov-renamedistributionlist--zmprov-rdl)
 - [Comandos para MAILBOX](#comandos-para-mailbox)
 - [getMailboxInfo / gmi](#getmailboxinfo--gmi)
 - [getQuotaUsage / gqu](#getquotausage--gqu)
@@ -564,7 +565,28 @@ Comandos que são usados para configuração do zimbra.
 
 ---
 
-#### getConfig  / gcf
+#### getAllConfig / gacf
+
+Mostra todas as configurações dos parâmetros do Zimbra.
+Todas as configurações LDAP são exibidas.
+
+Ex:
+```bash
+zmprov getAllConfig
+ou
+zmprov gacf
+```
+
+Ex2:
+```bash
+zmprov getAllConfig | grep zimbraHttpThrottleSafeIPs
+ou
+zmprov gacf | grep zimbraHttpThrottleSafeIPs
+```
+
+---
+
+#### getConfig / gcf
 
 Mostra a configuração de um detrminado parâmetro do Zimbra.
 
