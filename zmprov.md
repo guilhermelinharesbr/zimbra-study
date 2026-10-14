@@ -36,6 +36,7 @@
 - [modifyAccount / ma](#modifyaccount--ma)
 - [removeAccountAlias / raa](#removeaccountalias--raa)
 - [setPassword / sp](#setpassword--sp)
+- [Comandos de provisionamento de CONFIGURAÇÃO](#comandos-de-provisionamento-de-configuração)
 - [Comandos de provisionamento de LISTAS DE DISTRIBUIÇÃO](#comandos-de-provisionamento-de-listas-de-distribuição)
 - [createDistributionList / cdl](#createdistributionlist--cdl)
 - [addDistributionListMember / adlm](#adddistributionlistmember--adlm)
@@ -553,6 +554,12 @@ zmprov setPassword guilherme.linhares@dominio.com.br @senha123
 ou
 zmprov sp guilherme.linhares@dominio.com.br senha%123
 ```
+
+---
+
+#### Comandos de provisionamento de CONFIGURAÇÃO
+
+Comandos que são usados para configuração do zimbra. 
 
 ---
 
