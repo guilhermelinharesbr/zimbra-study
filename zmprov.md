@@ -27,6 +27,7 @@
     - [renameCos / rc](#renamecos--rc)
 - [Comandos de provisionamento de SERVIDOR](#comandos-de-provisionamento-de-servidor)
     - [getServer / gs](#getserver--gs)
+    - [getAllServers / gas](#getallservers--gas)
     - [modifyServer / ms](#modifyserver--ms)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
     - [addAccountAlias / aaa](#addaccountalias--aaa)
@@ -414,6 +415,19 @@ Ex2. mostra informações de todos os parâmetros do servidor vm100\.dominio.com
 zmprov getServer vm100.dominio.com.br
 ou
 zmprov gs vm100.dominio.com.br
+```
+
+---
+
+#### getAllServers / gas 
+
+O comando **zmprov getAllServers** serve para exibir todas os servidores já criados no Zimbra.
+
+Ex:
+```bash
+zmprov getAllServers
+ou
+zmprov gas
 ```
 
 ---
