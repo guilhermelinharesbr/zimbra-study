@@ -394,12 +394,6 @@ Comandos que são usados para consulta e manipulação dos parâmetros do servid
 
 ---
 
-### Comandos de provisionamento de CONTAS
-
-Comandos que são usados para criação, configuração, etc das contas no Zimbra. 
-
----
-
 #### createServer / cs 
 
 O comando **zmprov createServer** serve para criar um servidor no Zimbra.
@@ -458,6 +452,12 @@ zmprov modifyServer vm100.dominio.com.br zimbraSmtpHostname 192.168.1.30
 ou
 zmprov ms vm100.dominio.com.br zimbraSmtpHostname 192.168.1.30
 ```
+
+---
+
+### Comandos de provisionamento de CONTAS
+
+Comandos que são usados para criação, configuração, etc das contas no Zimbra. 
 
 ---
 
