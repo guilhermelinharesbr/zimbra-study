@@ -27,6 +27,7 @@
     - [renameCos / rc](#renamecos--rc)
 - [Comandos de provisionamento de SERVIDOR](#comandos-de-provisionamento-de-servidor)
     - [getServer / gs](#getserver--gs)
+    - [modifyServer / ms](#modifyserver--ms)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
     - [addAccountAlias / aaa](#addaccountalias--aaa)
     - [checkPasswordStrength / cps](#checkpasswordstrength--cps)
@@ -401,18 +402,31 @@ Comandos que são usados para criação, configuração, etc das contas no Zimbr
 
 O comando **zmprov getServer** serve para consultar e exibir todas as configurações, atributos e parâmetros globais ou específicos de um servidor registrado na infraestrutura do Zimbra.
 
-Ex. mostra informações do parâmetro zimbraSmtpHostname do servidor vm100.dominio.com.br:
+Ex. mostra informações do parâmetro zimbraSmtpHostname do servidor vm100\.dominio.com.br:
 ```bash
 zmprov getServer vm100.dominio.com.br zimbraSmtpHostname
 ou
 zmprov gs vm100.dominio.com.br zimbraSmtpHostname
 ```
 
-Ex. mostra informações de todos os parâmetros do servidor vm100.dominio.com.br:
+Ex2. mostra informações de todos os parâmetros do servidor vm100\.dominio.com.br:
 ```bash
 zmprov getServer vm100.dominio.com.br
 ou
 zmprov gs vm100.dominio.com.br
+```
+
+---
+
+#### modifyServer / ms 
+
+O comando **zmprov modifyServer** serve para alterar atributos, parâmetros e configurações de um servidor específico registado na infraestrutura do Zimbra.
+
+Ex. modifica informações do parâmetro zimbraSmtpHostname do servidor vm100\.dominio.com.br:
+```bash
+zmprov modifyServer vm100.dominio.com.br zimbraSmtpHostname 192.168.1.30
+ou
+zmprov ms vm100.dominio.com.br zimbraSmtpHostname 192.168.1.30
 ```
 
 ---
