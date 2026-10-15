@@ -26,7 +26,7 @@
     - [modifyCos / mc](#modifycos--mc)
     - [renameCos / rc](#renamecos--rc)
 - [Comandos de provisionamento de SERVIDOR](#comandos-de-provisionamento-de-servidor)
-    - []()
+    - [getServer / gs](#getserver--gs)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
     - [addAccountAlias / aaa](#addaccountalias--aaa)
     - [checkPasswordStrength / cps](#checkpasswordstrength--cps)
@@ -394,6 +394,26 @@ Comandos que são usados para consulta e manipulação dos parâmetros do servid
 ### Comandos de provisionamento de CONTAS
 
 Comandos que são usados para criação, configuração, etc das contas no Zimbra. 
+
+---
+
+#### getServer / gs 
+
+O comando **zmprov getServer** serve para consultar e exibir todas as configurações, atributos e parâmetros globais ou específicos de um servidor registrado na infraestrutura do Zimbra.
+
+Ex. mostra informações do parâmetro zimbraSmtpHostname do servidor vm100.dominio.com.br:
+```bash
+zmprov getServer vm100.dominio.com.br zimbraSmtpHostname
+ou
+zmprov gs vm100.dominio.com.br zimbraSmtpHostname
+```
+
+Ex. mostra informações de todos os parâmetros do servidor vm100.dominio.com.br:
+```bash
+zmprov getServer vm100.dominio.com.br
+ou
+zmprov gs vm100.dominio.com.br
+```
 
 ---
 
