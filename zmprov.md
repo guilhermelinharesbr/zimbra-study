@@ -25,6 +25,8 @@
     - [getAllCos / gac](#getallcos--gac)
     - [modifyCos / mc](#modifycos--mc)
     - [renameCos / rc](#renamecos--rc)
+- [Comandos de provisionamento de SERVIDOR](#comandos-de-provisionamento-de-servidor)
+    - []()
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
     - [addAccountAlias / aaa](#addaccountalias--aaa)
     - [checkPasswordStrength / cps](#checkpasswordstrength--cps)
@@ -380,6 +382,12 @@ zmprov renameCos teste_cos teste_cos2
 ou 
 zmprov rc teste_cos teste_cos2
 ```
+
+---
+
+### Comandos de provisionamento de SERVIDOR
+
+Comandos que são usados para consulta e manipulação dos parâmetros do servidor.
 
 ---
 
