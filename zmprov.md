@@ -26,6 +26,7 @@
     - [modifyCos / mc](#modifycos--mc)
     - [renameCos / rc](#renamecos--rc)
 - [Comandos de provisionamento de SERVIDOR](#comandos-de-provisionamento-de-servidor)
+    - [createServer / cs](#createserver--cs)
     - [getServer / gs](#getserver--gs)
     - [getAllServers / gas](#getallservers--gas)
     - [modifyServer / ms](#modifyserver--ms)
@@ -399,6 +400,21 @@ Comandos que são usados para criação, configuração, etc das contas no Zimbr
 
 ---
 
+#### createServer / cs 
+
+O comando **zmprov createServer** serve para criar um servidor no Zimbra.
+
+Syntax: {name} [attribute1 value1 etc] 
+
+Ex:
+```bash
+zmprov createServer vm100.dominio.com.br
+ou
+zmprov cs vm100.dominio.com.br
+```
+
+---
+
 #### getServer / gs 
 
 O comando **zmprov getServer** serve para consultar e exibir todas as configurações, atributos e parâmetros globais ou específicos de um servidor registrado na infraestrutura do Zimbra.
@@ -421,7 +437,7 @@ zmprov gs vm100.dominio.com.br
 
 #### getAllServers / gas 
 
-O comando **zmprov getAllServers** serve para exibir todas os servidores já criados no Zimbra.
+O comando **zmprov getAllServers** serve para exibir todos os servidores já criados no Zimbra.
 
 Ex:
 ```bash
