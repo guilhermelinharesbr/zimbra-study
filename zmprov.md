@@ -30,6 +30,7 @@
     - [deleteServer / ds](#deleteserver--ds)
     - [getServer / gs](#getserver--gs)
     - [getAllServers / gas](#getallservers--gas)
+    - [getAllReverseProxyBackends / garpb](#getallreverseproxybackends--garpb)
     - [modifyServer / ms](#modifyserver--ms)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
     - [addAccountAlias / aaa](#addaccountalias--aaa)
@@ -454,6 +455,19 @@ Ex:
 zmprov getAllServers
 ou
 zmprov gas
+```
+
+---
+
+#### getAllReverseProxyBackends / garpb 
+
+O comando **zmprov getAllReverseProxyBackends** serve para listar todos os servidores de mailstore (back-end) que são geridos e atendidos pelo proxy reverso (Nginx) na infraestrutura do Zimbra.
+
+Ex:
+```bash
+zmprov getAllReverseProxyBackends
+ou
+zmprov garpb
 ```
 
 ---
