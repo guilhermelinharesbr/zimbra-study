@@ -27,6 +27,7 @@
     - [renameCos / rc](#renamecos--rc)
 - [Comandos de provisionamento de SERVIDOR](#comandos-de-provisionamento-de-servidor)
     - [createServer / cs](#createserver--cs)
+    - [deleteServer / ds](#deleteserver--ds)
     - [getServer / gs](#getserver--gs)
     - [getAllServers / gas](#getallservers--gas)
     - [modifyServer / ms](#modifyserver--ms)
@@ -405,6 +406,21 @@ Ex:
 zmprov createServer vm100.dominio.com.br
 ou
 zmprov cs vm100.dominio.com.br
+```
+
+---
+
+#### deleteServer / ds
+
+O comando **zmprov deleteServer** serve para deletar um servidor no Zimbra.
+
+Syntax: {name|id} 
+
+Ex:
+```bash
+zmprov deleteServer vm100.dominio.com.br
+ou
+zmprov ds vm100.dominio.com.br
 ```
 
 ---
@@ -804,7 +820,7 @@ zmprov gdl equipe.financeiro@dominio.com.br
 Ex2. serve para exportar a lista de todos os membros (e-mails) do grupo equipe.financeiro\@dominio.com.br para dentro de um arquivo de texto chamado saida-zmprov.txt:
 
 ```bash
-zmprov gdl lista@dnocs.gov.br > saida-zmprov.txt
+zmprov gdl equipe.financeiro@dominio.com.br > saida-zmprov.txt
 ```
 
 ---
