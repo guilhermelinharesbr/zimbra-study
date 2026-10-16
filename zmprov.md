@@ -33,6 +33,7 @@
     - [getAllReverseProxyBackends / garpb](#getallreverseproxybackends--garpb)
     - [modifyServer / ms](#modifyserver--ms)
     - [getAllReverseProxyURLs / garpu](#getallreverseproxyurls--garpu)
+    - [getAllMtaAuthURLs  / gamau](#getallmtaauthurls---gamau)
 - [Comandos de provisionamento de CONTAS](#comandos-de-provisionamento-de-contas)
     - [addAccountAlias / aaa](#addaccountalias--aaa)
     - [checkPasswordStrength / cps](#checkpasswordstrength--cps)
@@ -490,7 +491,7 @@ zmprov ms vm100.dominio.com.br zimbraSmtpHostname 192.168.1.30
 
 O comando **zmprov getAllReverseProxyURLs** serve para listar todos os servidores de mailstore de upstream (os servidores de backend ou NLEs(Nginx Lookup Extensions)) que o proxy reverso do Zimbra utiliza para realizar as consultas de rota e o direcionamento de tráfego.
 
-Ele exibe os URLs e as referências dos servidores de backend que são publicados no arquivo de configuração do Nginx (_nginx.conf_), permitindo que o proxy saiba quais nós de correio devem ser consultados ou utilizados para o encaminhamento das conexões dos utilizadores.
+Ele exibe os URLs e as referências dos servidores de backend que são publicados no arquivo de configuração do Nginx (_nginx.conf_), geralmente com o caminho absoluto _/opt/zimbra/conf/nginx.conf_, permitindo que o proxy saiba quais nós de correio devem ser consultados ou utilizados para o encaminhamento das conexões dos utilizadores.
 
 Utilizado para publicar no arquivo _nginx.conf_ quais servidores devem ser usados ​​para a pesquisa de proxy reverso.
 
@@ -499,6 +500,19 @@ Ex:
 zmprov getAllReverseProxyURLs
 ou
 zmprov garpu
+```
+
+---
+
+#### getAllMtaAuthURLs  / gamau 
+
+O comando **zmprov getAllMtaAuthURLs** serve para listar os servidores de autenticação MTA configurados na infraestrutura do Zimbra, fornecendo os endereços que são utilizados para preencher o arquivo de configuração do _saslauthd.conf_, geralmente com o caminho absoluto _/opt/zimbra/conf/saslauthd.conf_, para a autenticação SASL no MTA. 
+
+Ex:
+```bash
+zmprov getAllMtaAuthURLs
+ou
+zmprov gamau
 ```
 
 ---
