@@ -626,7 +626,7 @@ ou
 zmprov -l getAllAccounts
 ```
 
-Imprime na tela todas as contas do domínio dominio.com.br:
+Imprime na tela todas as contas do domínio dominio\.com.br:
 
 ```bash
 zmprov -l gaa dominio.com.br
